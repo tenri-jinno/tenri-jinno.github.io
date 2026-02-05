@@ -199,11 +199,10 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 ### 3. Research / 研究内容セクション
 - 研究概要（homepage3.jpg をサイドに配置）
 - 研究キーワード
-- 学会発表写真（homepage4.jpg）
-- 論文結果動画（split.mp4）
-  - タイトル: 「微惑星円盤内で惑星が微惑星を散乱しながら移動する様子 [Jinno et al., 2024]」
-  - 出典: 令和6年度一般財団法人高度情報科学技術研究機構 「富岳」若手課題の研究結果
 - 修士論文ダウンロードリンク（master_thesis_final.pdf）
+- シミュレーション結果（2つの動画を横並びで配置）
+  - snap_animation_fast.mp4: 「微惑星円盤からの複数惑星の形成過程と惑星が微惑星を散乱しながら移動する様子 [Jinno et al., 2026]」令和7年度「富岳」若手課題の研究結果
+  - split.mp4: 「微惑星円盤内で惑星が微惑星を散乱しながら移動する様子 [Jinno et al., 2024]」令和6年度「富岳」若手課題の研究結果
 
 ### 4. Publications / 論文セクション
 - 査読付き論文リスト（DOIリンク付き）
@@ -238,8 +237,8 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 | profile.jpg | プロフィール写真 | About/自己紹介セクション |
 | homepage2.png | ヘッダー背景画像 | ヘッダー |
 | homepage3.jpg | 研究イメージ画像 | Research/研究概要（サイドに配置） |
-| homepage4.jpg | 学会発表時の写真 | Research/研究紹介 |
-| split.mp4 | 2024年論文の結果動画「微惑星円盤内で惑星が微惑星を散乱しながら移動する様子」 | Research/研究紹介 |
+| snap_animation_fast.mp4 | 2026年論文の結果動画「微惑星円盤からの複数惑星の形成過程と惑星が微惑星を散乱しながら移動する様子」 | Research/シミュレーション結果 |
+| split.mp4 | 2024年論文の結果動画「微惑星円盤内で惑星が微惑星を散乱しながら移動する様子」 | Research/シミュレーション結果 |
 | master_thesis_final.pdf | 修士学位論文（全135ページ） | Research/ダウンロードリンク |
 
 ---
@@ -249,15 +248,15 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 ### ファイル構成
 ```
 /
-├── index.html              # メインHTMLファイル
-├── style.css               # スタイルシート
-├── CLAUDE.md               # プロジェクト仕様書
-├── profile.jpg             # プロフィール写真（自己紹介）
-├── homepage2.png           # ヘッダー背景画像
-├── homepage3.jpg           # 研究イメージ画像（研究概要サイド）
-├── homepage4.jpg           # 学会発表写真（研究紹介）
-├── split.mp4               # 論文結果動画（研究紹介）
-└── master_thesis_final.pdf # 修士学位論文
+├── index.html                 # メインHTMLファイル
+├── style.css                  # スタイルシート
+├── CLAUDE.md                  # プロジェクト仕様書
+├── profile.jpg                # プロフィール写真（自己紹介）
+├── homepage2.png              # ヘッダー背景画像
+├── homepage3.jpg              # 研究イメージ画像（研究概要サイド）
+├── snap_animation_fast.mp4    # 2026年論文結果動画（シミュレーション結果）
+├── split.mp4                  # 2024年論文結果動画（シミュレーション結果）
+└── master_thesis_final.pdf    # 修士学位論文
 ```
 
 ### 対応ブラウザ
