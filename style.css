@@ -155,15 +155,18 @@ ul, ol {
 /* ========================================
    Hero Section
    ======================================== */
+#home {
+    padding: 0;
+}
+
 .hero {
     position: relative;
-    height: 60vh;
+    height: calc(100vh - var(--header-height));
     min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: var(--header-height);
 }
 
 .hero__background {
@@ -226,16 +229,19 @@ ul, ol {
 }
 
 /* ========================================
-   Section Base
+   Page Navigation (Tab System)
    ======================================== */
-.section, .hero {
+.page {
     display: none;
 }
 
-.section--active, .hero.section--active {
+.page--active {
     display: block;
 }
 
+/* ========================================
+   Section Base
+   ======================================== */
 .section {
     padding: var(--section-padding) 0;
     min-height: calc(100vh - var(--header-height));
