@@ -417,8 +417,8 @@ ul, ol {
 
 .research__simulation-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     margin-top: 16px;
 }
 
@@ -823,6 +823,14 @@ ul, ol {
 /* ========================================
    Responsive Design
    ======================================== */
+
+/* Tablet: 3 columns to 2 columns for simulations */
+@media (max-width: 960px) {
+    .research__simulation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --section-padding: 60px;
