@@ -28,7 +28,7 @@
     <!-- Header / Navigation -->
     <header class="header" id="header">
         <nav class="nav">
-            <div class="nav__logo">Tenri Jinno</div>
+            <a href="#home" class="nav__logo">Tenri Jinno</a>
             <button class="nav__toggle" id="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
                 <span class="nav__toggle-bar"></span>
                 <span class="nav__toggle-bar"></span>
@@ -558,6 +558,7 @@
         // Tab navigation system
         const pages = document.querySelectorAll('.page');
         const navLinks = document.querySelectorAll('.nav__link');
+        const navLogo = document.querySelector('.nav__logo');
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
         const header = document.getElementById('header');
@@ -601,6 +602,16 @@
                 navToggle.setAttribute('aria-expanded', 'false');
                 navMenu.classList.remove('nav__menu--open');
             });
+        });
+
+        // Logo click handler (navigate to home)
+        navLogo.addEventListener('click', function(e) {
+            e.preventDefault();
+            showPage('home');
+
+            // Close mobile menu
+            navToggle.setAttribute('aria-expanded', 'false');
+            navMenu.classList.remove('nav__menu--open');
         });
 
         // Mobile navigation toggle
