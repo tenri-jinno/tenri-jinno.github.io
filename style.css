@@ -161,9 +161,9 @@ ul, ol {
 
 .hero {
     position: relative;
-    height: 50vh;
-    min-height: 300px;
-    max-height: 450px;
+    height: 40vh;
+    min-height: 250px;
+    max-height: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
