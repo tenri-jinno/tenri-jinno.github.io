@@ -6,8 +6,8 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 - researchmap: https://researchmap.jp/tenri_jinno
 
 ## GitHub情報
-- **リポジトリ**: https://github.com/Tenri1198
-- **公開URL**: https://tenri1198.github.io/ （予定）
+- **リポジトリ**: https://github.com/tenri-jinno
+- **公開URL**: https://tenri-jinno.github.io/ （予定）
 
 ---
 
@@ -287,10 +287,10 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 ---
 
 ## GitHub Pages 設定手順
-1. https://github.com/Tenri1198 にリポジトリ作成（tenri1198.github.io）
+1. https://github.com/tenri-jinno にリポジトリ作成（tenri-jinno.github.io）
 2. index.html, style.css, 画像ファイルをプッシュ
 3. Settings → Pages → Source: main branch
-4. https://tenri1198.github.io/ で公開
+4. https://tenri-jinno.github.io/ で公開
 
 ---
 

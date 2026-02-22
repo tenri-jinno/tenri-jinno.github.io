@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tenri1198.github.io/sitemap.xml
+Sitemap: https://tenri-jinno.github.io/sitemap.xml
