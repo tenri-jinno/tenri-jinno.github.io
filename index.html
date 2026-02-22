@@ -621,8 +621,12 @@
             // Scroll to top of page
             window.scrollTo(0, 0);
 
-            // Update URL hash without scrolling
-            history.pushState(null, null, '#' + pageId);
+            // Update URL hash without scrolling (no hash for home)
+            if (pageId === 'home') {
+                history.pushState(null, null, window.location.pathname);
+            } else {
+                history.pushState(null, null, '#' + pageId);
+            }
         }
 
         // Navigation click handler
