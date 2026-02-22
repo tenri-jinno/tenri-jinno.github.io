@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="神野天里（Tenri Jinno）- 神戸大学大学院理学研究科惑星学専攻 博士課程2年。スーパーコンピュータ「富岳」を用いた大規模N体シミュレーションによる惑星形成研究。Planetesimal-driven migration、ペブル集積の研究。">
-    <meta name="keywords" content="神野天里, Tenri Jinno, 惑星形成, N体シミュレーション, 富岳, 神戸大学, planetesimal-driven migration, ペブル集積, 宇宙惑星科学">
+    <meta name="keywords" content="神野天里, Tenri Jinno, 惑星形成, N体シミュレーション, 富岳, 神戸大学, planetesimal-driven migration, ペブル集積, 宇宙惑星科学, planetary formation, Kobe University, Fugaku supercomputer">
     <meta name="author" content="Tenri Jinno">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="MnjiyvuGpFnWOgoqvyOW-sLWGTYD5R8kd7rED-1ivJI">
@@ -14,10 +14,14 @@
     <meta property="og:url" content="https://tenri-jinno.github.io/">
     <meta property="og:image" content="https://tenri-jinno.github.io/profile.png">
     <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale:alternate" content="en_US">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Tenri Jinno | 神野天里">
     <meta name="twitter:description" content="神戸大学大学院 惑星学専攻 博士課程。惑星形成シミュレーション研究。">
     <link rel="canonical" href="https://tenri-jinno.github.io/">
+    <link rel="alternate" hreflang="ja" href="https://tenri-jinno.github.io/">
+    <link rel="alternate" hreflang="en" href="https://tenri-jinno.github.io/">
+    <link rel="alternate" hreflang="x-default" href="https://tenri-jinno.github.io/">
     <title>Tenri Jinno | 神野天里 - 神戸大学 惑星形成研究</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,21 +31,21 @@
     {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "神野天里",
-        "alternateName": "Tenri Jinno",
+        "name": "Tenri Jinno",
+        "alternateName": "神野天里",
         "url": "https://tenri-jinno.github.io/",
         "image": "https://tenri-jinno.github.io/profile.png",
-        "jobTitle": "博士課程学生",
+        "jobTitle": "Ph.D. Student",
         "worksFor": {
             "@type": "Organization",
-            "name": "神戸大学大学院理学研究科惑星学専攻",
+            "name": "Kobe University, Graduate School of Science, Department of Planetology",
             "url": "https://www.kobe-u.ac.jp/"
         },
         "alumniOf": {
             "@type": "CollegeOrUniversity",
-            "name": "神戸大学"
+            "name": "Kobe University"
         },
-        "knowsAbout": ["惑星形成", "N体シミュレーション", "スーパーコンピュータ富岳", "Planetesimal-driven migration", "ペブル集積"],
+        "knowsAbout": ["Planetary Formation", "N-body Simulation", "Fugaku Supercomputer", "Planetesimal-driven migration", "Pebble Accretion", "惑星形成", "N体シミュレーション", "富岳"],
         "sameAs": [
             "https://orcid.org/0009-0001-5384-4202",
             "https://researchmap.jp/tenri_jinno",
@@ -69,6 +73,7 @@
                 <li><a href="#career" class="nav__link">Career</a></li>
                 <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
+            <button class="nav__lang" id="lang-toggle">EN</button>
         </nav>
     </header>
 
@@ -93,12 +98,13 @@
                     <h2 class="section__title">About</h2>
                     <div class="about">
                         <div class="about__image-wrapper">
-                            <img src="profile.png" alt="神野天里のプロフィール写真" class="about__image">
+                            <img src="profile.png" alt="Tenri Jinno" class="about__image">
                         </div>
                         <div class="about__content">
                             <h3 class="about__name">神野 天里 <span class="about__name-en">Tenri Jinno</span></h3>
-                            <p class="about__position">神戸大学大学院理学研究科惑星学専攻 博士課程2年</p>
-                            <p class="about__position-en">Ph.D. Student, Department of Planetology, Graduate School of Science, Kobe University</p>
+                            <p class="about__position lang-ja">神戸大学大学院理学研究科惑星学専攻 博士課程2年</p>
+                            <p class="about__position lang-en">Ph.D. Student (2nd year), Department of Planetology, Graduate School of Science, Kobe University</p>
+                            <p class="about__position-en lang-ja">Ph.D. Student, Department of Planetology, Graduate School of Science, Kobe University</p>
 
                             <div class="about__info">
                                 <div class="about__info-item">
@@ -107,7 +113,8 @@
                                 </div>
                                 <div class="about__info-item">
                                     <span class="about__info-label">Office:</span>
-                                    <span class="about__info-value">自然科学総合研究棟3号館 306号室</span>
+                                    <span class="about__info-value lang-ja">自然科学総合研究棟3号館 306号室</span>
+                                    <span class="about__info-value lang-en">Science and Technology Research Building 3, Room 306</span>
                                 </div>
                             </div>
 
@@ -128,19 +135,23 @@
 
                     <div class="research__overview">
                         <div class="research__text">
-                            <h3 class="research__heading">大規模数値シミュレーションで探る惑星系の多様性とその起源</h3>
-                            <p class="research__description">
+                            <h3 class="research__heading lang-ja">大規模数値シミュレーションで探る惑星系の多様性とその起源</h3>
+                            <h3 class="research__heading lang-en">Exploring the Diversity and Origins of Planetary Systems through Large-Scale Numerical Simulations</h3>
+                            <p class="research__description lang-ja">
                                 近年のコンピュータの大規模化と共に、数値シミュレーションで天文学の問題を扱うシミュレーション天文学が急速に発展してきました。その中で、私は「コンピュータシミュレーションを駆使して、惑星形成過程を解明すること」を大目標に研究を行っています。特に、スーパーコンピュータ「富岳」による大規模並列 <i>N</i> 体（多体）シミュレーションを用いて微惑星（数kmから百kmサイズの小天体）からの惑星形成過程を調べています。
                             </p>
+                            <p class="research__description lang-en">
+                                With the rapid advancement of computational power, simulation astronomy—using numerical simulations to tackle astronomical problems—has been growing rapidly. My primary research goal is to elucidate the planet formation process through computer simulations. In particular, I investigate the formation of planets from planetesimals (small bodies ranging from a few km to hundreds of km in size) using large-scale parallel <i>N</i>-body (many-body) simulations on the supercomputer "Fugaku."
+                            </p>
 
-                            <h4 class="research__subheading">研究分野</h4>
+                            <h4 class="research__subheading"><span class="lang-ja">研究分野</span><span class="lang-en">Research Fields</span></h4>
                             <ul class="research__fields">
-                                <li>自然科学一般／宇宙惑星科学／惑星形成</li>
-                                <li>情報通信／高性能計算／並列計算</li>
+                                <li><span class="lang-ja">自然科学一般／宇宙惑星科学／惑星形成</span><span class="lang-en">Natural Sciences / Space and Planetary Science / Planetary Formation</span></li>
+                                <li><span class="lang-ja">情報通信／高性能計算／並列計算</span><span class="lang-en">Information and Communication / High-Performance Computing / Parallel Computing</span></li>
                             </ul>
 
-                            <h4 class="research__subheading">キーワード</h4>
-                            <div class="research__keywords">
+                            <h4 class="research__subheading"><span class="lang-ja">キーワード</span><span class="lang-en">Keywords</span></h4>
+                            <div class="research__keywords lang-ja">
                                 <span class="keyword">惑星形成</span>
                                 <span class="keyword"><i>N</i>体シミュレーション</span>
                                 <span class="keyword">富岳</span>
@@ -148,49 +159,62 @@
                                 <span class="keyword">ペブル集積</span>
                                 <span class="keyword">高性能計算</span>
                             </div>
+                            <div class="research__keywords lang-en">
+                                <span class="keyword">Planetary Formation</span>
+                                <span class="keyword"><i>N</i>-body Simulation</span>
+                                <span class="keyword">Fugaku</span>
+                                <span class="keyword">Planetesimal-driven migration</span>
+                                <span class="keyword">Pebble Accretion</span>
+                                <span class="keyword">High-Performance Computing</span>
+                            </div>
                         </div>
                         <div class="research__image-wrapper">
-                            <img src="homepage3.jpg" alt="研究イメージ" class="research__image">
+                            <img src="homepage3.jpg" alt="Research Image" class="research__image">
                         </div>
                     </div>
 
                     <!-- Master Thesis -->
                     <div class="research__thesis">
-                        <h4 class="research__subheading">修士学位論文</h4>
+                        <h4 class="research__subheading"><span class="lang-ja">修士学位論文</span><span class="lang-en">Master's Thesis</span></h4>
                         <div class="thesis-card">
-                            <p class="thesis-card__title">「動径方向に構造を持つ原始惑星系円盤でのペブル集積を考慮した惑星系形成<i>N</i>体シミュレーション」</p>
-                            <p class="thesis-card__description">近年の原始惑星系円盤の観測結果から惑星形成理論の基礎、Jinno et al., 2023 の内容までをまとめた資料（全135ページ）</p>
+                            <p class="thesis-card__title lang-ja">「動径方向に構造を持つ原始惑星系円盤でのペブル集積を考慮した惑星系形成<i>N</i>体シミュレーション」</p>
+                            <p class="thesis-card__title lang-en">"<i>N</i>-body Simulation of Planetary System Formation Considering Pebble Accretion in a Radially Structured Protoplanetary Disk"</p>
+                            <p class="thesis-card__description lang-ja">近年の原始惑星系円盤の観測結果から惑星形成理論の基礎、Jinno et al., 2023 の内容までをまとめた資料（全135ページ）</p>
+                            <p class="thesis-card__description lang-en">A comprehensive document (135 pages) covering from recent observational results of protoplanetary disks to the fundamentals of planet formation theory and the content of Jinno et al., 2023</p>
                             <a href="master_thesis_final.pdf" class="thesis-card__download" download>
-                                📄 修士論文をダウンロード (PDF)
+                                <span class="lang-ja">📄 修士論文をダウンロード (PDF)</span>
+                                <span class="lang-en">📄 Download Master's Thesis (PDF)</span>
                             </a>
                         </div>
                     </div>
 
                     <div class="research__simulations">
-                        <h4 class="research__subheading">シミュレーション結果 <span class="research__note">(アニメーションをクリックするとポップアップ再生されます)</span></h4>
+                        <h4 class="research__subheading"><span class="lang-ja">シミュレーション結果</span><span class="lang-en">Simulation Results</span> <span class="research__note"><span class="lang-ja">(アニメーションをクリックするとポップアップ再生されます)</span><span class="lang-en">(Click on an animation to play in a popup)</span></span></h4>
                         <div class="research__simulation-grid">
                             <div class="research__simulation-item">
                                 <video class="research__video" controls playsinline>
                                     <source src="pebble_accretion.mp4" type="video/mp4">
-                                    お使いのブラウザは動画タグをサポートしていません。
                                 </video>
-                                <p class="research__video-title">層流領域内(0.5〜3.3 au)で最大100万体の小石(ペブル)の落下・リング形成を考慮した惑星形成の様子 [Jinno et al., 2023]</p>
+                                <p class="research__video-title lang-ja">層流領域内(0.5〜3.3 au)で最大100万体の小石(ペブル)の落下・リング形成を考慮した惑星形成の様子 [Jinno et al., 2023]</p>
+                                <p class="research__video-title lang-en">Planet formation considering the infall and ring formation of up to 1 million pebbles in the laminar region (0.5–3.3 au) [Jinno et al., 2023]</p>
                             </div>
                             <div class="research__simulation-item">
                                 <video class="research__video" controls playsinline>
                                     <source src="split.mp4" type="video/mp4">
-                                    お使いのブラウザは動画タグをサポートしていません。
                                 </video>
-                                <p class="research__video-title">微惑星円盤内で惑星が微惑星を散乱しながら移動する様子 [Jinno et al., 2024]</p>
-                                <p class="research__video-credit">令和6年度「富岳」若手課題の研究結果</p>
+                                <p class="research__video-title lang-ja">微惑星円盤内で惑星が微惑星を散乱しながら移動する様子 [Jinno et al., 2024]</p>
+                                <p class="research__video-title lang-en">A planet migrating through a planetesimal disk via scattering of planetesimals [Jinno et al., 2024]</p>
+                                <p class="research__video-credit lang-ja">令和6年度「富岳」若手課題の研究結果</p>
+                                <p class="research__video-credit lang-en">Research result from FY2024 "Fugaku" Young Researcher Project</p>
                             </div>
                             <div class="research__simulation-item">
                                 <video class="research__video" controls playsinline>
                                     <source src="snap_animation_fast.mp4" type="video/mp4">
-                                    お使いのブラウザは動画タグをサポートしていません。
                                 </video>
-                                <p class="research__video-title">微惑星円盤からの複数惑星の形成過程と惑星が微惑星を散乱しながら移動する様子 [Jinno et al., 2026]</p>
-                                <p class="research__video-credit">令和7年度「富岳」若手課題の研究結果</p>
+                                <p class="research__video-title lang-ja">微惑星円盤からの複数惑星の形成過程と惑星が微惑星を散乱しながら移動する様子 [Jinno et al., 2026]</p>
+                                <p class="research__video-title lang-en">Formation of multiple planets from a planetesimal disk and planetary migration through planetesimal scattering [Jinno et al., 2026]</p>
+                                <p class="research__video-credit lang-ja">令和7年度「富岳」若手課題の研究結果</p>
+                                <p class="research__video-credit lang-en">Research result from FY2025 "Fugaku" Young Researcher Project</p>
                             </div>
                         </div>
                     </div>
@@ -203,7 +227,7 @@
             <div class="container">
                 <h2 class="section__title">Publications</h2>
 
-                <h3 class="subsection__title">査読付き論文 / Refereed Papers（全て筆頭著者）</h3>
+                <h3 class="subsection__title"><span class="lang-ja">査読付き論文 / Refereed Papers（全て筆頭著者）</span><span class="lang-en">Refereed Papers (All as First Author)</span></h3>
                 <ol class="publications__list">
                     <li class="publication">
                         <p class="publication__authors"><strong>Tenri Jinno</strong>, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</p>
@@ -233,12 +257,12 @@
                     </li>
                 </ol>
 
-                <h3 class="subsection__title">査読なし / Non-refereed</h3>
+                <h3 class="subsection__title"><span class="lang-ja">査読なし / Non-refereed</span><span class="lang-en">Non-refereed</span></h3>
                 <ol class="publications__list publications__list--nonrefereed" start="5">
                     <li class="publication">
                         <p class="publication__authors">関口瑞希, 石﨑梨理, 菖蒲迫健介, <strong>神野天里</strong>, 米谷珠萌, 吉田有宏, 于賢洋</p>
                         <p class="publication__title">「惑星科学若手研究会2024開催報告」</p>
-                        <p class="publication__journal"><em>日本惑星科学会遊星人</em> 33巻 3号 (2024)</p>
+                        <p class="publication__journal"><em><span class="lang-ja">日本惑星科学会遊星人</span><span class="lang-en">The Planetary Science Society of Japan, Yuseijin</span></em> 33巻 3号 (2024)</p>
                         <p class="publication__doi">DOI: <a href="https://doi.org/10.14909/yuseijin.33.3_356" target="_blank" rel="noopener noreferrer">10.14909/yuseijin.33.3_356</a></p>
                     </li>
                 </ol>
@@ -250,72 +274,82 @@
             <div class="container">
                 <h2 class="section__title">Awards & Projects</h2>
 
-                <h3 class="subsection__title">研究プロジェクト / Research Projects</h3>
+                <h3 class="subsection__title"><span class="lang-ja">研究プロジェクト / Research Projects</span><span class="lang-en">Research Projects</span></h3>
                 <ul class="projects__list">
                     <li class="project">
                         <span class="project__number">[1]</span>
-                        <span class="project__period">2026年4月〜2026年9月</span>
-                        <span class="project__name">円盤風と粘性拡散を考慮した微惑星からの統一的な大規模惑星形成<i>N</i>体シミュレーション</span>
-                        <span class="project__funding">令和8年度「富岳」若手課題代表</span>
-                        <a href="https://www.hpci-office.jp/application/files/8717/7145/9081/adoptionlist2026_19.pdf" target="_blank" rel="noopener noreferrer" class="project__link">採択一覧</a>
+                        <span class="project__period"><span class="lang-ja">2026年4月〜2026年9月</span><span class="lang-en">Apr 2026 – Sep 2026</span></span>
+                        <span class="project__name lang-ja">円盤風と粘性拡散を考慮した微惑星からの統一的な大規模惑星形成<i>N</i>体シミュレーション</span>
+                        <span class="project__name lang-en">Unified large-scale <i>N</i>-body simulation of planet formation from planetesimals considering disk wind and viscous diffusion</span>
+                        <span class="project__funding"><span class="lang-ja">令和8年度「富岳」若手課題代表</span><span class="lang-en">FY2026 "Fugaku" Young Researcher Project (PI)</span></span>
+                        <a href="https://www.hpci-office.jp/application/files/8717/7145/9081/adoptionlist2026_19.pdf" target="_blank" rel="noopener noreferrer" class="project__link"><span class="lang-ja">採択一覧</span><span class="lang-en">Accepted List</span></a>
                     </li>
                     <li class="project">
                         <span class="project__number">[2]</span>
-                        <span class="project__period">2025年4月〜2026年3月</span>
-                        <span class="project__name">惑星移動を考慮した微惑星からの統一的な大規模惑星形成<i>N</i>体シミュレーション</span>
-                        <span class="project__funding">令和7年度「富岳」若手課題代表</span>
-                        <a href="https://www.hpci-office.jp/application/files/3017/3974/7242/adoptionlist2025_12.pdf" target="_blank" rel="noopener noreferrer" class="project__link">採択一覧</a>
+                        <span class="project__period"><span class="lang-ja">2025年4月〜2026年3月</span><span class="lang-en">Apr 2025 – Mar 2026</span></span>
+                        <span class="project__name lang-ja">惑星移動を考慮した微惑星からの統一的な大規模惑星形成<i>N</i>体シミュレーション</span>
+                        <span class="project__name lang-en">Unified large-scale <i>N</i>-body simulation of planet formation from planetesimals considering planetary migration</span>
+                        <span class="project__funding"><span class="lang-ja">令和7年度「富岳」若手課題代表</span><span class="lang-en">FY2025 "Fugaku" Young Researcher Project (PI)</span></span>
+                        <a href="https://www.hpci-office.jp/application/files/3017/3974/7242/adoptionlist2025_12.pdf" target="_blank" rel="noopener noreferrer" class="project__link"><span class="lang-ja">採択一覧</span><span class="lang-en">Accepted List</span></a>
                     </li>
                     <li class="project">
                         <span class="project__number">[3]</span>
-                        <span class="project__period">2024年4月〜2025年3月</span>
-                        <span class="project__name">大規模惑星形成<i>N</i>体計算：惑星形成過程への Planetesimal-Driven Migration による惑星移動の効果</span>
-                        <span class="project__funding">令和6年度「富岳」若手課題代表</span>
-                        <a href="https://www.hpci-office.jp/application/files/6817/0804/0762/adoptionlist2024_12.pdf" target="_blank" rel="noopener noreferrer" class="project__link">採択一覧</a>
+                        <span class="project__period"><span class="lang-ja">2024年4月〜2025年3月</span><span class="lang-en">Apr 2024 – Mar 2025</span></span>
+                        <span class="project__name lang-ja">大規模惑星形成<i>N</i>体計算：惑星形成過程への Planetesimal-Driven Migration による惑星移動の効果</span>
+                        <span class="project__name lang-en">Large-scale <i>N</i>-body simulation of planet formation: The effect of planetesimal-driven migration on the planet formation process</span>
+                        <span class="project__funding"><span class="lang-ja">令和6年度「富岳」若手課題代表</span><span class="lang-en">FY2024 "Fugaku" Young Researcher Project (PI)</span></span>
+                        <a href="https://www.hpci-office.jp/application/files/6817/0804/0762/adoptionlist2024_12.pdf" target="_blank" rel="noopener noreferrer" class="project__link"><span class="lang-ja">採択一覧</span><span class="lang-en">Accepted List</span></a>
                     </li>
                     <li class="project">
                         <span class="project__number">[4]</span>
-                        <span class="project__period">2025年4月〜2027年3月</span>
-                        <span class="project__name">大規模数値シミュレーションで探る惑星系の多様性とその起源</span>
-                        <span class="project__funding">特別研究員-DC2</span>
+                        <span class="project__period"><span class="lang-ja">2025年4月〜2027年3月</span><span class="lang-en">Apr 2025 – Mar 2027</span></span>
+                        <span class="project__name lang-ja">大規模数値シミュレーションで探る惑星系の多様性とその起源</span>
+                        <span class="project__name lang-en">Exploring the diversity and origins of planetary systems through large-scale numerical simulations</span>
+                        <span class="project__funding"><span class="lang-ja">特別研究員-DC2</span><span class="lang-en">JSPS Research Fellowship for Young Scientists (DC2)</span></span>
                         <a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-25KJ1814/" target="_blank" rel="noopener noreferrer" class="project__link">KAKEN</a>
                     </li>
                 </ul>
 
-                <h3 class="subsection__title">受賞歴 / Awards</h3>
+                <h3 class="subsection__title"><span class="lang-ja">受賞歴 / Awards</span><span class="lang-en">Awards</span></h3>
                 <ul class="awards__list">
                     <li class="award">
                         <span class="award__number">[5]</span>
-                        <span class="award__period">2024年9月</span>
-                        <span class="award__name">日本惑星科学会2024年度最優秀発表賞「大規模惑星形成<i>N</i>体シミュレーションで探る氷惑星の起源」</span>
-                        <a href="https://www.wakusei.jp/news/prize/bestpr-2024/review-presen.html" target="_blank" rel="noopener noreferrer" class="award__link">詳細</a>
+                        <span class="award__period"><span class="lang-ja">2024年9月</span><span class="lang-en">Sep 2024</span></span>
+                        <span class="award__name lang-ja">日本惑星科学会2024年度最優秀発表賞「大規模惑星形成<i>N</i>体シミュレーションで探る氷惑星の起源」</span>
+                        <span class="award__name lang-en">Best Presentation Award, The Japanese Society for Planetary Sciences 2024 "Exploring the origins of ice giants through large-scale <i>N</i>-body simulations of planet formation"</span>
+                        <a href="https://www.wakusei.jp/news/prize/bestpr-2024/review-presen.html" target="_blank" rel="noopener noreferrer" class="award__link"><span class="lang-ja">詳細</span><span class="lang-en">Details</span></a>
                     </li>
                     <li class="award">
                         <span class="award__number">[6]</span>
-                        <span class="award__period">2023年8月</span>
-                        <span class="award__name">第53回 天文・天体物理若手夏の学校 星間現象/星・惑星形成分科会オーラルアワード第一位</span>
-                        <a href="https://astro-wakate.sakura.ne.jp/ss2023/award/index.html" target="_blank" rel="noopener noreferrer" class="award__link">詳細</a>
+                        <span class="award__period"><span class="lang-ja">2023年8月</span><span class="lang-en">Aug 2023</span></span>
+                        <span class="award__name lang-ja">第53回 天文・天体物理若手夏の学校 星間現象/星・惑星形成分科会オーラルアワード第一位</span>
+                        <span class="award__name lang-en">1st Place Oral Award, ISM/Star & Planet Formation Session, 53rd Summer School on Astronomy and Astrophysics</span>
+                        <a href="https://astro-wakate.sakura.ne.jp/ss2023/award/index.html" target="_blank" rel="noopener noreferrer" class="award__link"><span class="lang-ja">詳細</span><span class="lang-en">Details</span></a>
                     </li>
                     <li class="award">
                         <span class="award__number">[7]</span>
-                        <span class="award__period">2024年7月</span>
-                        <span class="award__name">国際ハイパフォーマンスコンピューティングサマースクール2024 日本選抜</span>
+                        <span class="award__period"><span class="lang-ja">2024年7月</span><span class="lang-en">Jul 2024</span></span>
+                        <span class="award__name lang-ja">国際ハイパフォーマンスコンピューティングサマースクール2024 日本選抜</span>
+                        <span class="award__name lang-en">Selected as Japan Representative, International HPC Summer School 2024</span>
                     </li>
                     <li class="award">
                         <span class="award__number">[8]</span>
-                        <span class="award__period">2023年11月</span>
-                        <span class="award__name">令和5年度第12回サイエンスフロンティア研究発表会 優秀発表賞「コンピュータの中の惑星：シミュレーションで探る惑星の起源と進化」</span>
-                        <a href="http://www.sci.kobe-u.ac.jp/news/2023/231102.html" target="_blank" rel="noopener noreferrer" class="award__link">詳細</a>
+                        <span class="award__period"><span class="lang-ja">2023年11月</span><span class="lang-en">Nov 2023</span></span>
+                        <span class="award__name lang-ja">令和5年度第12回サイエンスフロンティア研究発表会 優秀発表賞「コンピュータの中の惑星：シミュレーションで探る惑星の起源と進化」</span>
+                        <span class="award__name lang-en">Outstanding Presentation Award, 12th Science Frontier Research Presentation (FY2023) "Planets in the Computer: Exploring the Origins and Evolution of Planets through Simulation"</span>
+                        <a href="http://www.sci.kobe-u.ac.jp/news/2023/231102.html" target="_blank" rel="noopener noreferrer" class="award__link"><span class="lang-ja">詳細</span><span class="lang-en">Details</span></a>
                     </li>
                     <li class="award">
                         <span class="award__number">[9]</span>
-                        <span class="award__period">2024年</span>
-                        <span class="award__name">令和6年度第13回サイエンスフロンティア研究発表会 優秀発表賞「『富岳』で惑星を作る：大規模数値シミュレーションで探る惑星の起源と進化」</span>
+                        <span class="award__period"><span class="lang-ja">2024年</span><span class="lang-en">2024</span></span>
+                        <span class="award__name lang-ja">令和6年度第13回サイエンスフロンティア研究発表会 優秀発表賞「『富岳』で惑星を作る：大規模数値シミュレーションで探る惑星の起源と進化」</span>
+                        <span class="award__name lang-en">Outstanding Presentation Award, 13th Science Frontier Research Presentation (FY2024) "Making Planets with 'Fugaku': Exploring the Origins and Evolution of Planets through Large-Scale Numerical Simulations"</span>
                     </li>
                     <li class="award">
                         <span class="award__number">[10]</span>
-                        <span class="award__period">2025年</span>
-                        <span class="award__name">令和7年度第14回サイエンスフロンティア研究発表会 優秀発表賞「スーパーコンピュータ『富岳』で拓く：新しい惑星形成の描像」</span>
+                        <span class="award__period"><span class="lang-ja">2025年</span><span class="lang-en">2025</span></span>
+                        <span class="award__name lang-ja">令和7年度第14回サイエンスフロンティア研究発表会 優秀発表賞「スーパーコンピュータ『富岳』で拓く：新しい惑星形成の描像」</span>
+                        <span class="award__name lang-en">Outstanding Presentation Award, 14th Science Frontier Research Presentation (FY2025) "Pioneering with Supercomputer 'Fugaku': A New Picture of Planet Formation"</span>
                     </li>
                 </ul>
             </div>
@@ -326,7 +360,7 @@
             <div class="container">
                 <h2 class="section__title">Presentations</h2>
 
-                <h3 class="subsection__title">国際学会 / International Conferences</h3>
+                <h3 class="subsection__title"><span class="lang-ja">国際学会 / International Conferences</span><span class="lang-en">International Conferences</span></h3>
                 <ul class="presentations__list">
                     <li class="presentation">
                         <span class="presentation__date">2025/12</span>
@@ -335,7 +369,7 @@
                             <span class="presentation__authors">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span>
                             <span class="presentation__venue">International Conference on Exoplanets and Planet Formation 2025 (Shanghai, China)</span>
                         </div>
-                        <span class="presentation__type">ポスター</span>
+                        <span class="presentation__type"><span class="lang-ja">ポスター</span><span class="lang-en">Poster</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2025/9</span>
@@ -344,7 +378,7 @@
                             <span class="presentation__authors">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span>
                             <span class="presentation__venue">EPSC-DPS Joint Meeting 2025 (Finlandia Hall Helsinki, Finland)</span>
                         </div>
-                        <span class="presentation__type">ポスター</span>
+                        <span class="presentation__type"><span class="lang-ja">ポスター</span><span class="lang-en">Poster</span></span>
                     </li>
                     <li class="presentation presentation--invited">
                         <span class="presentation__date">2025/4</span>
@@ -353,7 +387,7 @@
                             <span class="presentation__authors">Tenri Jinno</span>
                             <span class="presentation__venue">International STEAM Symposium for Young Researchers 2025</span>
                         </div>
-                        <span class="presentation__type presentation__type--invited">招待講演</span>
+                        <span class="presentation__type presentation__type--invited"><span class="lang-ja">招待講演</span><span class="lang-en">Invited</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2024/7</span>
@@ -362,7 +396,7 @@
                             <span class="presentation__authors">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span>
                             <span class="presentation__venue">International HPC Summer School 2024</span>
                         </div>
-                        <span class="presentation__type">ポスター</span>
+                        <span class="presentation__type"><span class="lang-ja">ポスター</span><span class="lang-en">Poster</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2023/8</span>
@@ -371,128 +405,128 @@
                             <span class="presentation__authors">Tenri Jinno</span>
                             <span class="presentation__venue">34th IUPAP Conference on Computational Physics</span>
                         </div>
-                        <span class="presentation__type">ポスター</span>
+                        <span class="presentation__type"><span class="lang-ja">ポスター</span><span class="lang-en">Poster</span></span>
                     </li>
                 </ul>
 
-                <h3 class="subsection__title">国内学会 / Domestic Conferences</h3>
+                <h3 class="subsection__title"><span class="lang-ja">国内学会 / Domestic Conferences</span><span class="lang-en">Domestic Conferences (Japan)</span></h3>
                 <ul class="presentations__list">
                     <li class="presentation">
                         <span class="presentation__date">2025/10</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「大規模惑星形成<i>N</i>体計算：惑星形成過程への Planetesimal-Driven Migration による惑星移動の効果」</span>
-                            <span class="presentation__authors">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span>
-                            <span class="presentation__venue">第12回「富岳」を中核とするHPCIシステム利用研究課題成果報告会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span><span class="lang-en">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">第12回「富岳」を中核とするHPCIシステム利用研究課題成果報告会</span><span class="lang-en">12th HPCI System Research Results Presentation (Fugaku)</span></span>
                         </div>
-                        <span class="presentation__type">ポスター</span>
+                        <span class="presentation__type"><span class="lang-ja">ポスター</span><span class="lang-en">Poster</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2025/5</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「微惑星円盤からの統一的な惑星形成 <i>N</i>体シミュレーション：惑星移動を考慮したダイナミックな惑星形成シナリオ」</span>
-                            <span class="presentation__authors">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span>
-                            <span class="presentation__venue">日本地球惑星科学連合 2025年大会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span><span class="lang-en">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">日本地球惑星科学連合 2025年大会</span><span class="lang-en">Japan Geoscience Union Meeting 2025</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2025/3</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「微惑星円盤からの惑星形成過程における planetesimal-driven migration の効果」</span>
-                            <span class="presentation__authors">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span>
-                            <span class="presentation__venue">日本天文学会 2025年春季年会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span><span class="lang-en">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">日本天文学会 2025年春季年会</span><span class="lang-en">Astronomical Society of Japan, Spring Meeting 2025</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2025/3</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「大規模惑星形成<i>N</i>体シミュレーション：惑星移動を考慮したダイナミックな惑星形成の描像」</span>
-                            <span class="presentation__authors">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span>
-                            <span class="presentation__venue">惑星形成討論会2025</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span><span class="lang-en">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">惑星形成討論会2025</span><span class="lang-en">Planet Formation Workshop 2025</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2024/9</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「大規模惑星形成<i>N</i>体シミュレーションで探る氷惑星の起源」</span>
-                            <span class="presentation__authors">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span>
-                            <span class="presentation__venue">日本惑星科学会 2024年秋季講演会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span><span class="lang-en">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">日本惑星科学会 2024年秋季講演会</span><span class="lang-en">Japanese Society for Planetary Sciences, Autumn Meeting 2024</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2024/7</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「大規模<i>N</i>体シミュレーション：微惑星散乱による惑星移動が惑星形成過程に及ぼす効果の検証」</span>
-                            <span class="presentation__authors">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span>
-                            <span class="presentation__venue">第54回天文・天体物理若手夏の学校</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里, 斎藤貴之, 船渡陽子, 牧野淳一郎</span><span class="lang-en">Tenri Jinno, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">第54回天文・天体物理若手夏の学校</span><span class="lang-en">54th Summer School on Astronomy and Astrophysics</span></span>
                         </div>
-                        <span class="presentation__type">ポスター</span>
+                        <span class="presentation__type"><span class="lang-ja">ポスター</span><span class="lang-en">Poster</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2024/5</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「大規模惑星系<i>N</i>体シミュレーション：Planetesimal-Driven Migration による原始惑星の外向き移動」</span>
-                            <span class="presentation__authors">神野天里</span>
-                            <span class="presentation__venue">日本地球惑星科学連合 2024年大会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里</span><span class="lang-en">Tenri Jinno</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">日本地球惑星科学連合 2024年大会</span><span class="lang-en">Japan Geoscience Union Meeting 2024</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2024/3</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「大規模 <i>N</i> 体計算によるplanetesimal-driven migrationが惑星形成過程に及ぼす効果の検証」</span>
-                            <span class="presentation__authors">神野天里</span>
-                            <span class="presentation__venue">日本天文学会 2024年春季年会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里</span><span class="lang-en">Tenri Jinno</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">日本天文学会 2024年春季年会</span><span class="lang-en">Astronomical Society of Japan, Spring Meeting 2024</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2024/3</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「自己無撞着な大規模<i>N</i>体シミュレーションによる planetesimal-driven migration が惑星形成過程に及ぼす効果の検証」</span>
-                            <span class="presentation__authors">神野天里</span>
-                            <span class="presentation__venue">第3回「富岳」成果創出加速プログラム研究交流会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里</span><span class="lang-en">Tenri Jinno</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">第3回「富岳」成果創出加速プログラム研究交流会</span><span class="lang-en">3rd "Fugaku" Results Acceleration Program Research Exchange Meeting</span></span>
                         </div>
-                        <span class="presentation__type">ポスター</span>
+                        <span class="presentation__type"><span class="lang-ja">ポスター</span><span class="lang-en">Poster</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2023/9</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「衝突破壊プロセスとペブル集積を考慮した標準降着円盤からの検討に基づく惑星形成 <i>N</i> 体シミュレーション」</span>
-                            <span class="presentation__authors">神野天里</span>
-                            <span class="presentation__venue">日本天文学会 2023年秋季年会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里</span><span class="lang-en">Tenri Jinno</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">日本天文学会 2023年秋季年会</span><span class="lang-en">Astronomical Society of Japan, Autumn Meeting 2023</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2023/8</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「動径方向に構造を持つ原始惑星系円盤におけるペブル集積と衝突破壊を考慮した惑星形成 <i>N</i> 体シミュレーション」</span>
-                            <span class="presentation__authors">神野天里</span>
-                            <span class="presentation__venue">第53回天文・天体物理若手夏の学校</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里</span><span class="lang-en">Tenri Jinno</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">第53回天文・天体物理若手夏の学校</span><span class="lang-en">53rd Summer School on Astronomy and Astrophysics</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2023/5</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「動径方向に構造を持つ原始惑星系円盤におけるペブル集積を考慮した惑星形成 <i>N</i> 体シミュレーション」</span>
-                            <span class="presentation__authors">神野天里</span>
-                            <span class="presentation__venue">日本地球惑星科学連合 2023年大会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里</span><span class="lang-en">Tenri Jinno</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">日本地球惑星科学連合 2023年大会</span><span class="lang-en">Japan Geoscience Union Meeting 2023</span></span>
                         </div>
-                        <span class="presentation__type">ポスター</span>
+                        <span class="presentation__type"><span class="lang-ja">ポスター</span><span class="lang-en">Poster</span></span>
                     </li>
                     <li class="presentation">
                         <span class="presentation__date">2023/3</span>
                         <div class="presentation__content">
                             <span class="presentation__title">「標準降着円盤の検討に基づくペブル集積を考慮した惑星系形成 <i>N</i> 体シミュレーション」</span>
-                            <span class="presentation__authors">神野天里</span>
-                            <span class="presentation__venue">日本天文学会 2023年春季年会</span>
+                            <span class="presentation__authors"><span class="lang-ja">神野天里</span><span class="lang-en">Tenri Jinno</span></span>
+                            <span class="presentation__venue"><span class="lang-ja">日本天文学会 2023年春季年会</span><span class="lang-en">Astronomical Society of Japan, Spring Meeting 2023</span></span>
                         </div>
-                        <span class="presentation__type">口頭発表</span>
+                        <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                 </ul>
             </div>
@@ -503,38 +537,38 @@
             <div class="container">
                 <h2 class="section__title">Career</h2>
 
-                <h3 class="subsection__title">学歴 / Education</h3>
+                <h3 class="subsection__title"><span class="lang-ja">学歴 / Education</span><span class="lang-en">Education</span></h3>
                 <ul class="career__list">
                     <li class="career__item">
-                        <span class="career__date">2024年4月〜現在</span>
-                        <span class="career__content">神戸大学大学院理学研究科惑星学専攻 博士課程</span>
+                        <span class="career__date"><span class="lang-ja">2024年4月〜現在</span><span class="lang-en">Apr 2024 – Present</span></span>
+                        <span class="career__content"><span class="lang-ja">神戸大学大学院理学研究科惑星学専攻 博士課程</span><span class="lang-en">Ph.D. Program, Department of Planetology, Graduate School of Science, Kobe University</span></span>
                     </li>
                     <li class="career__item">
-                        <span class="career__date">2024年3月</span>
-                        <span class="career__content">神戸大学大学院理学研究科惑星学専攻 修士課程修了（修士・理学）</span>
+                        <span class="career__date"><span class="lang-ja">2024年3月</span><span class="lang-en">Mar 2024</span></span>
+                        <span class="career__content"><span class="lang-ja">神戸大学大学院理学研究科惑星学専攻 修士課程修了（修士・理学）</span><span class="lang-en">M.Sc. in Planetology, Graduate School of Science, Kobe University</span></span>
                     </li>
                     <li class="career__item">
-                        <span class="career__date">2022年3月</span>
-                        <span class="career__content">神戸大学理学部惑星学科 卒業（学士・理学）</span>
+                        <span class="career__date"><span class="lang-ja">2022年3月</span><span class="lang-en">Mar 2022</span></span>
+                        <span class="career__content"><span class="lang-ja">神戸大学理学部惑星学科 卒業（学士・理学）</span><span class="lang-en">B.Sc. in Planetology, Faculty of Science, Kobe University</span></span>
                     </li>
                     <li class="career__item">
-                        <span class="career__date">2016年6月</span>
-                        <span class="career__content">カナダ・オンタリオ州立 Glebe Collegiate Institute 卒業</span>
+                        <span class="career__date"><span class="lang-ja">2016年6月</span><span class="lang-en">Jun 2016</span></span>
+                        <span class="career__content"><span class="lang-ja">カナダ・オンタリオ州立 Glebe Collegiate Institute 卒業</span><span class="lang-en">Graduated from Glebe Collegiate Institute, Ontario, Canada</span></span>
                     </li>
                 </ul>
 
-                <h3 class="subsection__title">所属学会 / Academic Societies</h3>
+                <h3 class="subsection__title"><span class="lang-ja">所属学会 / Academic Societies</span><span class="lang-en">Academic Societies</span></h3>
                 <ul class="societies__list">
-                    <li>日本天文学会</li>
-                    <li>日本惑星科学会</li>
-                    <li>日本地球惑星科学連合</li>
+                    <li><span class="lang-ja">日本天文学会</span><span class="lang-en">Astronomical Society of Japan</span></li>
+                    <li><span class="lang-ja">日本惑星科学会</span><span class="lang-en">The Japanese Society for Planetary Sciences</span></li>
+                    <li><span class="lang-ja">日本地球惑星科学連合</span><span class="lang-en">Japan Geoscience Union</span></li>
                 </ul>
 
-                <h3 class="subsection__title">資格 / Qualifications</h3>
+                <h3 class="subsection__title"><span class="lang-ja">資格 / Qualifications</span><span class="lang-en">Qualifications</span></h3>
                 <ul class="qualifications__list">
-                    <li>TOEIC Listening & Reading: 980点</li>
+                    <li>TOEIC Listening & Reading: 980<span class="lang-ja">点</span></li>
                     <li>The 2024 International Summer School on HPC Challenges in Computational Sciences Certificate of Participation</li>
-                    <li>第4級アマチュア無線技士</li>
+                    <li><span class="lang-ja">第4級アマチュア無線技士</span><span class="lang-en">Class 4 Amateur Radio Operator License (Japan)</span></li>
                 </ul>
             </div>
         </section>
@@ -551,7 +585,8 @@
                         </div>
                         <div class="contact__item">
                             <h3 class="contact__label">Office</h3>
-                            <p class="contact__value">自然科学総合研究棟3号館 306号室<br>神戸大学大学院理学研究科惑星学専攻</p>
+                            <p class="contact__value lang-ja">自然科学総合研究棟3号館 306号室<br>神戸大学大学院理学研究科惑星学専攻</p>
+                            <p class="contact__value lang-en">Science and Technology Research Building 3, Room 306<br>Department of Planetology, Graduate School of Science, Kobe University</p>
                         </div>
                     </div>
                     <div class="contact__links">
@@ -572,10 +607,9 @@
     <div id="videoModal" class="video-modal">
         <div class="video-modal__overlay"></div>
         <div class="video-modal__content">
-            <button class="video-modal__close" aria-label="閉じる">&times;</button>
+            <button class="video-modal__close" aria-label="Close">&times;</button>
             <video id="modalVideo" class="video-modal__video" controls playsinline>
                 <source id="modalVideoSource" src="" type="video/mp4">
-                お使いのブラウザは動画タグをサポートしていません。
             </video>
             <p id="modalVideoTitle" class="video-modal__title"></p>
         </div>
@@ -589,6 +623,32 @@
     </footer>
 
     <script>
+        // Language switching
+        const langToggle = document.getElementById('lang-toggle');
+        const htmlEl = document.documentElement;
+
+        function setLanguage(lang) {
+            htmlEl.setAttribute('lang', lang);
+            langToggle.textContent = lang === 'ja' ? 'EN' : 'JP';
+            localStorage.setItem('lang', lang);
+            if (lang === 'en') {
+                document.title = 'Tenri Jinno - Planetary Formation Research, Kobe University';
+            } else {
+                document.title = 'Tenri Jinno | 神野天里 - 神戸大学 惑星形成研究';
+            }
+        }
+
+        langToggle.addEventListener('click', function() {
+            const currentLang = htmlEl.getAttribute('lang') || 'ja';
+            setLanguage(currentLang === 'ja' ? 'en' : 'ja');
+        });
+
+        // Restore saved language preference
+        const savedLang = localStorage.getItem('lang');
+        if (savedLang) {
+            setLanguage(savedLang);
+        }
+
         // Tab navigation system
         const pages = document.querySelectorAll('.page');
         const navLinks = document.querySelectorAll('.nav__link');
@@ -690,9 +750,20 @@
             video.addEventListener('click', function(e) {
                 e.preventDefault();
 
-                // Get video source and title
+                // Get video source
                 const videoSrc = this.querySelector('source').getAttribute('src');
-                const videoTitle = this.nextElementSibling.textContent;
+
+                // Get the visible video title based on current language
+                const titleEl = this.closest('.research__simulation-item').querySelector('.research__video-title:not([style*="display: none"])');
+                const currentLang = htmlEl.getAttribute('lang') || 'ja';
+                const titles = this.closest('.research__simulation-item').querySelectorAll('.research__video-title');
+                let videoTitle = '';
+                titles.forEach(t => {
+                    if ((currentLang === 'ja' && t.classList.contains('lang-ja')) ||
+                        (currentLang === 'en' && t.classList.contains('lang-en'))) {
+                        videoTitle = t.textContent;
+                    }
+                });
 
                 // Set modal video source and title
                 modalVideoSource.setAttribute('src', videoSrc);
