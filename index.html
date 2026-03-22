@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -73,7 +73,11 @@
                 <li><a href="#career" class="nav__link">Career</a></li>
                 <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
-            <button class="nav__lang" id="lang-toggle">EN</button>
+            <div class="lang-switch" id="lang-toggle">
+                <span class="lang-switch__option lang-switch__option--ja">JP</span>
+                <span class="lang-switch__slider"></span>
+                <span class="lang-switch__option lang-switch__option--en">EN</span>
+            </div>
         </nav>
     </header>
 
@@ -136,10 +140,10 @@
                             <h3 class="research__heading lang-ja">大規模数値シミュレーションで探る惑星系の多様性とその起源</h3>
                             <h3 class="research__heading lang-en">Exploring the Diversity and Origins of Planetary Systems through Large-Scale Numerical Simulations</h3>
                             <p class="research__description lang-ja">
-                                近年のコンピュータの大規模化と共に、数値シミュレーションで天文学の問題を扱うシミュレーション天文学が急速に発展してきました。その中で、私は「コンピュータシミュレーションを駆使して、惑星形成過程を解明すること」を大目標に研究を行っています。特に、スーパーコンピュータ「富岳」による大規模並列 <i>N</i> 体（多体）シミュレーションを用いて微惑星（数kmから百kmサイズの小天体）からの惑星形成過程を調べています。
+                                近年のコンピュータの大規模化と共に、数値シミュレーションで天文学の問題を扱うシミュレーション天文学が急速に発展してきました。その中で、私は「コンピュータシミュレーションを駆使して、惑星形成過程を解明すること」を大目標に研究を行っています。特に、スーパーコンピュータ「富岳」やGPUを用いた次世代スーパーコンピュータによる大規模並列 <i>N</i> 体（多体）シミュレーションを用いて微惑星（数kmから百kmサイズの小天体）からの惑星形成過程を調べています。
                             </p>
                             <p class="research__description lang-en">
-                                With the rapid advancement of computational power, simulation astronomy—using numerical simulations to tackle astronomical problems—has been growing rapidly. My primary research goal is to elucidate the planet formation process through computer simulations. In particular, I investigate the formation of planets from planetesimals (small bodies ranging from a few km to hundreds of km in size) using large-scale parallel <i>N</i>-body (many-body) simulations on the supercomputer "Fugaku."
+                                With the rapid advancement of computational power, simulation astronomy—using numerical simulations to tackle astronomical problems—has been growing rapidly. My primary research goal is to elucidate the planet formation process through computer simulations. In particular, I investigate the formation of planets from planetesimals (small bodies ranging from a few km to hundreds of km in size) using large-scale parallel <i>N</i>-body (many-body) simulations on the supercomputer "Fugaku" and next-generation supercomputers using GPUs.
                             </p>
 
                             <h4 class="research__subheading"><span class="lang-ja">研究分野</span><span class="lang-en">Research Fields</span></h4>
@@ -636,13 +640,14 @@
 
         function setLanguage(lang) {
             htmlEl.setAttribute('lang', lang);
-            langToggle.textContent = lang === 'ja' ? 'EN' : 'JP';
-            localStorage.setItem('lang', lang);
             if (lang === 'en') {
+                langToggle.classList.add('lang-switch--en');
                 document.title = 'Tenri Jinno - Planetary Formation Research, Kobe University';
             } else {
+                langToggle.classList.remove('lang-switch--en');
                 document.title = 'Tenri Jinno | 神野天里 - 神戸大学 惑星形成研究';
             }
+            localStorage.setItem('lang', lang);
         }
 
         langToggle.addEventListener('click', function() {
