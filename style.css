@@ -998,6 +998,23 @@ ul, ol {
         right: 56px;
         top: 50%;
         transform: translateY(-50%);
+        width: 150px;
+        height: 30px;
+    }
+
+    .lang-switch__option {
+        font-size: 0.7rem;
+        width: 72px;
+        line-height: 24px;
+    }
+
+    .lang-switch__slider {
+        width: 72px;
+        height: 24px;
+    }
+
+    .lang-switch--en .lang-switch__slider {
+        transform: translateX(72px);
     }
 
     .nav__link:last-child {
