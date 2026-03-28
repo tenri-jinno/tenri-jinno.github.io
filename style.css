@@ -178,8 +178,8 @@ ul, ol {
     border-radius: 20px;
     padding: 2px;
     position: relative;
-    width: 72px;
-    height: 30px;
+    width: 240px;
+    height: 34px;
 }
 
 .lang-switch__option {
@@ -187,10 +187,11 @@ ul, ol {
     font-weight: 700;
     letter-spacing: 0.5px;
     z-index: 1;
-    width: 34px;
+    width: 118px;
     text-align: center;
     transition: color 0.3s ease;
-    line-height: 26px;
+    line-height: 30px;
+    white-space: nowrap;
 }
 
 .lang-switch__option--ja {
@@ -205,15 +206,15 @@ ul, ol {
     position: absolute;
     top: 2px;
     left: 2px;
-    width: 34px;
-    height: 26px;
+    width: 118px;
+    height: 30px;
     background-color: var(--color-accent);
     border-radius: 18px;
     transition: transform 0.3s ease;
 }
 
 .lang-switch--en .lang-switch__slider {
-    transform: translateX(34px);
+    transform: translateX(118px);
 }
 
 .lang-switch--en .lang-switch__option--ja {
