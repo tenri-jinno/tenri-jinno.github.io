@@ -352,6 +352,19 @@ ul, ol {
     margin-top: 0;
 }
 
+.subsubsection__title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text-light);
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.subsection__title + .subsubsection__title {
+    margin-top: 0;
+}
+
 /* ========================================
    About Section
    ======================================== */
