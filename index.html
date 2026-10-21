@@ -26,7 +26,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=6">
+    <script>
+        try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="style.css?v=7">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -73,10 +76,17 @@
                 <li><a href="#career" class="nav__link">Career</a></li>
                 <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
-            <div class="lang-switch" id="lang-toggle">
-                <span class="lang-switch__option lang-switch__option--ja" title="Japanese">JP</span>
-                <span class="lang-switch__slider"></span>
-                <span class="lang-switch__option lang-switch__option--en" title="English">EN</span>
+            <div class="nav__controls">
+                <div class="toggle-switch" id="lang-toggle">
+                    <span class="toggle-switch__option toggle-switch__option--left" title="Japanese">JP</span>
+                    <span class="toggle-switch__slider"></span>
+                    <span class="toggle-switch__option toggle-switch__option--right" title="English">EN</span>
+                </div>
+                <button type="button" class="toggle-switch" id="theme-toggle" aria-label="Night mode" aria-pressed="false" title="Day / Night">
+                    <span class="toggle-switch__option toggle-switch__option--left" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span>
+                    <span class="toggle-switch__slider"></span>
+                    <span class="toggle-switch__option toggle-switch__option--right" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -704,10 +714,10 @@
         function setLanguage(lang) {
             htmlEl.setAttribute('lang', lang);
             if (lang === 'en') {
-                langToggle.classList.add('lang-switch--en');
+                langToggle.classList.add('toggle-switch--right');
                 document.title = "Tenri Jinno's Homepage | 神野天里 ホームページ";
             } else {
-                langToggle.classList.remove('lang-switch--en');
+                langToggle.classList.remove('toggle-switch--right');
                 document.title = "Tenri Jinno's Homepage | 神野天里 ホームページ";
             }
             localStorage.setItem('lang', lang);
@@ -723,6 +733,30 @@
         if (savedLang) {
             setLanguage(savedLang);
         }
+
+        // Day / night mode switching
+        const themeToggle = document.getElementById('theme-toggle');
+
+        function setTheme(theme, save) {
+            const isDark = theme === 'dark';
+            if (isDark) {
+                htmlEl.setAttribute('data-theme', 'dark');
+            } else {
+                htmlEl.removeAttribute('data-theme');
+            }
+            themeToggle.classList.toggle('toggle-switch--right', isDark);
+            themeToggle.setAttribute('aria-pressed', String(isDark));
+            if (save) {
+                try { localStorage.setItem('theme', theme); } catch (e) {}
+            }
+        }
+
+        themeToggle.addEventListener('click', function() {
+            setTheme(htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark', true);
+        });
+
+        // Sync the toggle with the theme applied in <head>
+        setTheme(htmlEl.getAttribute('data-theme') === 'dark' ? 'dark' : 'light', false);
 
         // Tab navigation system
         const pages = document.querySelectorAll('.page');
