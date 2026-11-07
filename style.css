@@ -736,6 +736,37 @@ ul, ol {
 }
 
 /* ========================================
+   Curriculum Vitae Section
+   ======================================== */
+.cv__lead {
+    color: var(--color-text-light);
+    margin-bottom: 16px;
+}
+
+.cv__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.cv__viewer iframe {
+    display: block;
+    width: 100%;
+    height: 85vh;
+    min-height: 600px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+}
+
+.cv__fallback {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-top: 8px;
+}
+
+/* ========================================
    Awards Section
    ======================================== */
 .awards__list {

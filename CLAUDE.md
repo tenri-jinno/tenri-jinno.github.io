@@ -191,7 +191,7 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 ## ページ構成
 
 ### ナビゲーション動作
-- ナビメニュー（Home, Publications, Awards, Presentations, Career, Contact）をクリックすると、該当ページのみが表示される
+- ナビメニュー（Home, Publications, Awards, Presentations, Curriculum Vitae, Career, Contact）をクリックすると、該当ページのみが表示される
 - 他のページは非表示になる（display: none）
 - **Homeページ**: Hero + About + Research を含む（スクロールで閲覧）
 - 初期表示は Homeページ
@@ -199,7 +199,7 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 
 ### 1. ヘッダー/ナビゲーション
 - 固定ヘッダー（homepage2.png を背景に使用）
-- メニュー: Home, Publications, Awards, Presentations, Career, Contact
+- メニュー: Home, Publications, Awards, Presentations, Curriculum Vitae, Career, Contact
 
 ### 2. Home ページ（Hero + About + Research）
 #### Hero セクション
@@ -233,6 +233,11 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 ### 6. Presentations / 研究発表セクション
 - 国際学会発表（著者名付き）
 - 国内学会発表（著者名付き）
+
+### 6.5. Curriculum Vitae セクション
+- 英文 Academic CV（cv.pdf、A4・2ページ）を iframe で埋め込み表示。別タブで開く／ダウンロードのボタン付き
+- 原稿は cv.html。更新時は cv.html を編集し、ヘッドレス Chrome の --print-to-pdf で cv.pdf を再生成する
+- About セクションにも「CV (PDF)」ボタンを置く
 
 ### 7. Career / 経歴セクション
 - 学歴タイムライン
@@ -276,6 +281,8 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 ├── pebble_accretion.mp4       # 2023年論文結果動画（シミュレーション結果）
 ├── split.mp4                  # 2024年論文結果動画（シミュレーション結果）
 ├── snap_animation_fast.mp4    # 2026年論文結果動画（シミュレーション結果）
+├── cv.html                    # Academic CV の原稿（印刷用HTML）
+├── cv.pdf                     # Academic CV（cv.html から生成）
 └── master_thesis_final.pdf    # 修士学位論文
 ```
 

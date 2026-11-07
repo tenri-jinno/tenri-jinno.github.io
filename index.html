@@ -29,7 +29,7 @@
     <script>
         try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
     </script>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=8">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -73,6 +73,7 @@
                 <li><a href="#publications" class="nav__link">Publications</a></li>
                 <li><a href="#awards" class="nav__link">Awards</a></li>
                 <li><a href="#presentations" class="nav__link">Presentations</a></li>
+                <li><a href="#cv" class="nav__link">Curriculum Vitae</a></li>
                 <li><a href="#career" class="nav__link">Career</a></li>
                 <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
@@ -134,6 +135,7 @@
                             <div class="about__links">
                                 <a href="https://orcid.org/0009-0001-5384-4202" target="_blank" rel="noopener noreferrer" class="about__link">ORCID</a>
                                 <a href="https://researchmap.jp/tenri_jinno" target="_blank" rel="noopener noreferrer" class="about__link">researchmap</a>
+                                <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="about__link">CV (PDF)</a>
                             </div>
                         </div>
                     </div>
@@ -636,6 +638,28 @@
                         <span class="presentation__type"><span class="lang-ja">口頭発表</span><span class="lang-en">Oral</span></span>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <!-- Curriculum Vitae Section -->
+        <section class="page section" id="cv">
+            <div class="container">
+                <h2 class="section__title">Curriculum Vitae</h2>
+                <p class="cv__lead">
+                    <span class="lang-ja">英文の Academic CV（A4・2ページ）です。別タブで開く、またはダウンロードできます。</span>
+                    <span class="lang-en">Academic CV in English (A4, 2 pages). You can open it in a new tab or download it.</span>
+                </p>
+                <div class="cv__actions">
+                    <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="about__link"><span class="lang-ja">別タブで開く</span><span class="lang-en">Open in new tab</span></a>
+                    <a href="cv.pdf" class="about__link" download="Tenri_Jinno_CV.pdf"><span class="lang-ja">ダウンロード</span><span class="lang-en">Download</span></a>
+                </div>
+                <div class="cv__viewer">
+                    <iframe src="cv.pdf#view=FitH" title="Curriculum Vitae (PDF)" loading="lazy"></iframe>
+                    <p class="cv__fallback">
+                        <span class="lang-ja">PDF が表示されない場合は、上のボタンから開いてください。</span>
+                        <span class="lang-en">If the PDF does not display here, please use the buttons above.</span>
+                    </p>
+                </div>
             </div>
         </section>
 

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Curriculum Vitae – Tenri Jinno</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    @page { size: A4; margin: 10mm 12mm 10mm 12mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 9.2pt; }
+    body {
+        font-family: "Source Sans 3", "Noto Sans JP", "Hiragino Sans", sans-serif;
+        color: #111;
+        line-height: 1.3;
+        background: #fff;
+    }
+    .cv { max-width: 186mm; margin: 0 auto; }
+    @media screen { body { padding: 24px 16px; background: #e9e9e9; } .cv { background: #fff; padding: 18mm; box-shadow: 0 2px 12px rgba(0,0,0,.15); } }
+
+    /* Header */
+    .head { border-bottom: 1.5px solid #111; padding-bottom: 4pt; margin-bottom: 4pt; }
+    .head__name { font-family: "Merriweather", serif; font-size: 17pt; font-weight: 700; letter-spacing: .3px; }
+    .head__name-ja { font-family: "Noto Sans JP", "Hiragino Sans", sans-serif; font-size: 12pt; font-weight: 500; color: #444; margin-left: 10pt; }
+    .head__title { font-size: 9pt; color: #333; margin-top: 2pt; }
+    .head__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14pt; margin-top: 3pt; font-size: 8.3pt; color: #333; }
+    .head__grid a { color: #111; text-decoration: none; }
+    .head__updated { font-size: 7.8pt; color: #666; margin-top: 1pt; }
+
+    h2 {
+        font-family: "Merriweather", serif;
+        font-size: 10.3pt; font-weight: 700;
+        border-bottom: 1px solid #111;
+        margin: 6pt 0 3pt; padding-bottom: 1pt;
+        break-after: avoid;
+    }
+    h3 {
+        font-size: 8.4pt; font-weight: 700; color: #333;
+        margin: 4pt 0 2pt; text-transform: uppercase; letter-spacing: .5px;
+        break-after: avoid;
+    }
+    p { margin-bottom: 2pt; }
+    p.summary { text-align: justify; }
+
+    /* Dated entries */
+    .entry { display: grid; grid-template-columns: 27mm 1fr; gap: 0 3mm; margin-bottom: 2pt; break-inside: avoid; }
+    .entry__date { color: #444; font-size: 8.2pt; white-space: nowrap; }
+    .entry__title { font-weight: 600; }
+    .entry__sub { color: #444; }
+    .entry__note { color: #555; font-size: 8.2pt; }
+
+    /* Numbered lists (publications) */
+    ol.pubs { list-style: none; counter-reset: pub; }
+    ol.pubs > li { position: relative; padding-left: 6mm; margin-bottom: 2pt; break-inside: avoid; }
+    ol.pubs > li::before { counter-increment: pub; content: "[" counter(pub) "]"; position: absolute; left: 0; color: #444; font-size: 8.3pt; }
+    ol.pubs > li.start-6 { counter-reset: pub 5; }
+    .pub__title { font-weight: 600; }
+    .pub__journal { color: #444; }
+    .pub__journal em { font-style: italic; }
+    .pub__link a { color: #111; text-decoration: none; font-size: 8.3pt; }
+    strong.me { font-weight: 700; }
+
+    /* Presentations */
+    .pres { display: grid; grid-template-columns: 15mm 1fr 12mm; gap: 0 3mm; margin-bottom: 1.5pt; break-inside: avoid; font-size: 8.6pt; }
+    .pres__date { color: #444; font-size: 8.2pt; }
+    .pres__type { color: #444; font-size: 8pt; text-align: right; }
+    .pres__venue { color: #444; display: inline; }
+    .pres .pub__title { display: inline; }
+    .pres .pub__title::after { content: " — "; font-weight: 400; color: #444; }
+    .pres__authors { display: none; }
+
+    ul.plain { list-style: none; }
+    ul.plain li { position: relative; padding-left: 3.5mm; margin-bottom: 1pt; }
+    ul.plain li::before { content: "•"; position: absolute; left: 0; color: #444; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 10mm; }
+    .footer-note { font-size: 7.5pt; color: #666; margin-top: 6pt; border-top: 1px solid #ccc; padding-top: 2pt; }
+</style>
+</head>
+<body>
+<div class="cv">
+
+<header class="head">
+    <div class="head__name">Tenri Jinno <span class="head__name-ja">神野 天里</span></div>
+    <div class="head__title">Ph.D. Student (3rd year) · JSPS Research Fellow (DC2) · Department of Planetology, Graduate School of Science, Kobe University</div>
+    <div class="head__grid">
+        <div><strong>Email:</strong> 223s415s(at)gsuite.kobe-u.ac.jp</div>
+        <div><strong>Web:</strong> <a href="https://tenri-jinno.github.io/">https://tenri-jinno.github.io/</a></div>
+        <div><strong>Office:</strong> Room 306, Science and Technology Research Building 3, Kobe University, 1-1 Rokkodai-cho, Nada-ku, Kobe 657-8501, Japan</div>
+        <div><strong>ORCID:</strong> <a href="https://orcid.org/0009-0001-5384-4202">0009-0001-5384-4202</a> &nbsp; <strong>researchmap:</strong> <a href="https://researchmap.jp/tenri_jinno">tenri_jinno</a></div>
+    </div>
+    <div class="head__updated">Last updated: November 2026</div>
+</header>
+
+<h2>Summary</h2>
+<p class="summary">Researcher in computational astronomy specializing in planet formation simulations, studying the formation of planets from planetesimals with large-scale, self-consistent <i>N</i>-body simulations. PI of three consecutive "Fugaku" Young Researcher projects and a Miyabi "Large-scale HPC Challenge" project; chief developer of GPLUM-GPU, a high-performance GPU-accelerated <i>N</i>-body simulation code for planet formation.</p>
+<p><strong>Research Fields:</strong> Natural Sciences / Space and Planetary Science / Planetary Formation; Information and Communication / High-Performance Computing / Parallel Computing</p>
+
+<h2>Education</h2>
+<div class="entry"><div class="entry__date">Apr 2024 – present</div><div><div class="entry__title">Ph.D. Program, Department of Planetology, Graduate School of Science, Kobe University</div><div class="entry__sub">Computational Planetology Group · Advisor: Prof. Junichiro Makino</div></div></div>
+<div class="entry"><div class="entry__date">Apr 2022 – Mar 2024</div><div><div class="entry__title">M.Sc. in Planetology, Graduate School of Science, Kobe University</div></div></div>
+<div class="entry"><div class="entry__date">Apr 2020 – Mar 2022</div><div><div class="entry__title">B.Sc. in Planetology, Faculty of Science, Kobe University</div><div class="entry__sub">Admitted by transfer in the third year</div></div></div>
+<div class="entry"><div class="entry__date">Apr 2017 – Mar 2020</div><div><div class="entry__title">Faculty of Environment and Information Studies, Keio University</div><div class="entry__sub">Major in computer science · Withdrew to transfer to Kobe University</div></div></div>
+<div class="entry"><div class="entry__date">Jun 2016</div><div><div class="entry__title">Glebe Collegiate Institute, Ottawa, Ontario, Canada</div></div></div>
+
+<h2>Positions, Fellowships &amp; Software</h2>
+<div class="entry"><div class="entry__date">Apr 2025 – Mar 2027</div><div><div class="entry__title">JSPS Research Fellow for Young Scientists (DC2)</div><div class="entry__sub">Japan Society for the Promotion of Science · Project: "Exploring the diversity and origins of planetary systems through large-scale numerical simulations" (KAKENHI 25KJ1814)</div></div></div>
+<div class="entry"><div class="entry__date">Present</div><div><div class="entry__title">Chief Developer, GPLUM-GPU</div><div class="entry__sub">A high-performance GPU-accelerated <i>N</i>-body simulation code for planet formation (particle–particle particle–tree scheme) · <a href="https://github.com/GPLUM-GPUAdmin" style="color:#111;text-decoration:none">github.com/GPLUM-GPUAdmin</a></div></div></div>
+
+<h2>Research Grants &amp; Computational Allocations (as Principal Investigator)</h2>
+<div class="entry"><div class="entry__date">FY2026</div><div><div class="entry__title">"Large-scale HPC Challenge" Project, Miyabi Supercomputer System, Joint Center for Advanced High Performance Computing (JCAHPC) — <span class="entry__sub" style="font-weight:400">Investigation of a GPU computing framework for ultra-high-resolution planet formation simulations resolving individual planetesimals</span></div></div></div>
+<div class="entry"><div class="entry__date">Apr 2026 – Sep 2026</div><div><div class="entry__title">FY2026 "Fugaku" Young Researcher Project — <span class="entry__sub" style="font-weight:400">Unified large-scale <i>N</i>-body simulation of planet formation from planetesimals considering disk wind and viscous diffusion</span></div></div></div>
+<div class="entry"><div class="entry__date">Apr 2025 – Mar 2026</div><div><div class="entry__title">FY2025 "Fugaku" Young Researcher Project — <span class="entry__sub" style="font-weight:400">Unified large-scale <i>N</i>-body simulation of planet formation from planetesimals considering planetary migration</span></div></div></div>
+<div class="entry"><div class="entry__date">Apr 2024 – Mar 2025</div><div><div class="entry__title">FY2024 "Fugaku" Young Researcher Project — <span class="entry__sub" style="font-weight:400">Large-scale <i>N</i>-body simulation of planet formation: The effect of planetesimal-driven migration on the planet formation process</span></div></div></div>
+
+<h2>Publications</h2>
+<h3>Refereed Journal Papers (First Author)</h3>
+<ol class="pubs">
+    <li><strong class="me">T. Jinno</strong>, Y. Ishigaki, T. R. Saitoh, Y. Funato, J. Makino, <span class="pub__title">"GPLUM-GPU: A high-performance GPU-accelerated <i>N</i>-body simulation code for planet formation with a particle–particle particle–tree scheme"</span>, <span class="pub__journal">submitted to <em>Publications of the Astronomical Society of Japan</em></span></li>
+    <li><strong class="me">T. Jinno</strong>, T. R. Saitoh, Y. Funato, J. Makino, <span class="pub__title">"Self-consistent <i>N</i>-body simulation of planetesimal-driven migration. II. The effect of PDM on planet formation from a planetesimal disk"</span>, <span class="pub__journal"><em>Publications of the Astronomical Society of Japan</em>, 78(2), 764–780 (2026)</span>. <span class="pub__link"><a href="https://doi.org/10.1093/pasj/psag017">doi:10.1093/pasj/psag017</a></span></li>
+    <li><strong class="me">T. Jinno</strong>, T. R. Saitoh, Y. Funato, J. Makino, <span class="pub__title">"Self-consistent <i>N</i>-body simulation of planetesimal-driven migration. I. The trajectories of single planets in the uniform background"</span>, <span class="pub__journal"><em>Publications of the Astronomical Society of Japan</em>, 76(6), 1309–1322 (2024)</span>. <span class="pub__link"><a href="https://doi.org/10.1093/pasj/psae090">doi:10.1093/pasj/psae090</a></span></li>
+    <li><strong class="me">T. Jinno</strong>, T. R. Saitoh, Y. Ishigaki, J. Makino, <span class="pub__title">"<i>N</i>-body simulation of planetary formation through pebble accretion in a radially structured protoplanetary disk"</span>, <span class="pub__journal"><em>Publications of the Astronomical Society of Japan</em>, 75(5), 951–969 (2023)</span>. <span class="pub__link"><a href="https://doi.org/10.1093/pasj/psad053">doi:10.1093/pasj/psad053</a></span></li>
+    <li><strong class="me">T. Jinno</strong>, T. R. Saitoh, Y. Funato, J. Makino, <span class="pub__title">"Unified large-scale <i>N</i>-body simulation of planet formation from planetesimals considering planetary migration"</span> (in Japanese), <span class="pub__journal"><em>Planetary People (Yuseijin), The Japanese Society for Planetary Sciences</em>, 35(2), 54–65 (2026)</span>. <span class="pub__link"><a href="https://doi.org/10.14909/yuseijin.35.2_54">doi:10.14909/yuseijin.35.2_54</a></span></li>
+</ol>
+<h3>Refereed Journal Papers (Co-author)</h3>
+<ol class="pubs">
+    <li class="start-6">D. M. Hernandez, <strong class="me">T. Jinno</strong>, J. Makino, <span class="pub__title">"Time-reversible timestepping in many-body planetary systems"</span>, <span class="pub__journal">submitted to <em>Monthly Notices of the Royal Astronomical Society</em></span>. <span class="pub__link"><a href="https://arxiv.org/abs/2610.22007">arXiv:2610.22007</a></span></li>
+</ol>
+<h3>Refereed Conference Proceedings (First Author)</h3>
+<ol class="pubs">
+    <li class="start-7" style="counter-reset: pub 6;"><strong class="me">T. Jinno</strong>, T. R. Saitoh, Y. Ishigaki, J. Makino, <span class="pub__title">"<i>N</i>-Body Simulations of Planet Formation within the Inner Dead-Zone Boundary of Protoplanetary Disk"</span>, <span class="pub__journal">in <em>Proceedings of the 34th IUPAP Conference on Computational Physics (CCP2023)</em>, Springer Proceedings in Physics, vol. 356, Springer, Singapore (2026)</span>. <span class="pub__link"><a href="https://doi.org/10.1007/978-981-92-0844-9_30">doi:10.1007/978-981-92-0844-9_30</a></span></li>
+</ol>
+<h3>Non-refereed</h3>
+<ol class="pubs">
+    <li style="counter-reset: pub 7;">M. Sekiguchi, R. Ishizaki, K. Shobuzako, <strong class="me">T. Jinno</strong>, T. Yoneya, A. Yoshida, X. Yu, <span class="pub__title">"Report on the Planetary Science Young Researchers Workshop 2024"</span> (in Japanese), <span class="pub__journal"><em>Yuseijin, The Japanese Society for Planetary Sciences</em>, 33(3) (2024)</span>. <span class="pub__link"><a href="https://doi.org/10.14909/yuseijin.33.3_356">doi:10.14909/yuseijin.33.3_356</a></span></li>
+</ol>
+
+<h2>Conference Presentations</h2>
+<p class="entry__note">Presenting author on all items; co-authors as in the related papers.</p>
+<h3>Invited Talks</h3>
+<div class="pres"><div class="pres__date">Apr 2025</div><div><div class="pub__title">Global <i>N</i>-body Simulation of Planetary Formation: The Origins of Ice Giants</div><div class="pres__venue">International STEAM Symposium for Young Researchers 2025</div></div><div class="pres__type">Invited</div></div>
+
+<h3>International Conferences</h3>
+<div class="pres"><div class="pres__date">Aug 2026</div><div><div class="pub__title">Development of a GPU-accelerated large-scale <i>N</i>-body simulation code for planet formation</div><div class="pres__venue">Formation of Stars and Planets in the Evolving Galaxy, Okinawa</div><div class="pres__authors">T. Jinno, Y. Ishigaki, T. R. Saitoh, Y. Funato, J. Makino</div></div><div class="pres__type">Poster</div></div>
+<div class="pres"><div class="pres__date">May 2026</div><div><div class="pub__title">Planet Formation in the Era of 100 Million-Planetesimal <i>N</i>-body Simulations</div><div class="pres__venue">JpGU-AGU Joint Meeting 2026, Chiba</div><div class="pres__authors">T. Jinno, T. R. Saitoh, Y. Funato, Y. Yoshida, J. Makino</div></div><div class="pres__type">Oral</div></div>
+<div class="pres"><div class="pres__date">Dec 2025</div><div><div class="pub__title">The effect of planetesimal-driven migration on planet formation from planetesimals</div><div class="pres__venue">Int. Conf. on Exoplanets and Planet Formation 2025, Shanghai</div><div class="pres__authors">T. Jinno, T. R. Saitoh, Y. Funato, J. Makino</div></div><div class="pres__type">Poster</div></div>
+<div class="pres"><div class="pres__date">Sep 2025</div><div><div class="pub__title">Global <i>N</i>-body simulation of planetary formation: The origins of ice giants</div><div class="pres__venue">EPSC-DPS Joint Meeting 2025, Helsinki</div><div class="pres__authors">T. Jinno, T. R. Saitoh, Y. Funato, J. Makino</div></div><div class="pres__type">Poster</div></div>
+<div class="pres"><div class="pres__date">Jul 2024</div><div><div class="pub__title">Global <i>N</i>-body simulation of planet formation: The effects of planetesimal-driven migration on planetary formation process</div><div class="pres__venue">International HPC Summer School 2024, Kobe</div><div class="pres__authors">T. Jinno, T. R. Saitoh, Y. Funato, J. Makino</div></div><div class="pres__type">Poster</div></div>
+<div class="pres"><div class="pres__date">Aug 2023</div><div><div class="pub__title"><i>N</i>-body simulation of planetary formation through pebble accretion in a radially structured protoplanetary disk</div><div class="pres__venue">CCP2023 (34th IUPAP Conf. on Computational Physics), Kobe</div><div class="pres__authors">T. Jinno, T. R. Saitoh, Y. Ishigaki, J. Makino</div></div><div class="pres__type">Poster</div></div>
+
+<h3>Domestic Conferences (Japan)</h3>
+<p>16 contributed presentations (10 oral, 6 poster), Mar 2023 – Oct 2026, as presenting author at:</p>
+<ul class="plain">
+    <li>Astronomical Society of Japan, Annual Meetings (Spring 2023, Autumn 2023, Spring 2024, Spring 2025, Autumn 2026) — 5 oral</li>
+    <li>Japan Geoscience Union Meetings (2023, 2024, 2025) — 2 oral, 1 poster</li>
+    <li>The Japanese Society for Planetary Sciences, Autumn Meeting 2024 — 1 oral</li>
+    <li>Planet Formation Workshop 2025 — 1 oral</li>
+    <li>Summer School on Astronomy and Astrophysics (53rd, 2023; 54th, 2024) — 1 oral, 1 poster</li>
+    <li>HPCI System Research Results Presentations on "Fugaku" (12th, 2025; 13th, 2026) — 2 poster</li>
+    <li>Research Workshops of the Program for Promoting Research on the Supercomputer Fugaku (3rd, 2024; 5th, 2026) — 2 poster</li>
+</ul>
+<h2>Awards &amp; Honors</h2>
+<div class="entry" style="grid-template-columns:15mm 1fr;margin-bottom:1pt"><div class="entry__date">2026</div><div><div class="entry__title">Outstanding Presentation Award, 15th Science Frontier Research Presentation (FY2026)</div></div></div>
+<div class="entry" style="grid-template-columns:15mm 1fr;margin-bottom:1pt"><div class="entry__date">May 2026</div><div><div class="entry__title">Student Outstanding Presentation Award, Space and Planetary Sciences Section, JpGU-AGU Joint Meeting 2026</div></div></div>
+<div class="entry" style="grid-template-columns:15mm 1fr;margin-bottom:1pt"><div class="entry__date">2025</div><div><div class="entry__title">Outstanding Presentation Award, 14th Science Frontier Research Presentation (FY2025)</div></div></div>
+<div class="entry" style="grid-template-columns:15mm 1fr;margin-bottom:1pt"><div class="entry__date">Sep 2024</div><div><div class="entry__title">Best Presentation Award, The Japanese Society for Planetary Sciences 2024</div></div></div>
+<div class="entry" style="grid-template-columns:15mm 1fr;margin-bottom:1pt"><div class="entry__date">Jul 2024</div><div><div class="entry__title">Selected as Japan Representative, International HPC Summer School 2024</div></div></div>
+<div class="entry" style="grid-template-columns:15mm 1fr;margin-bottom:1pt"><div class="entry__date">2024</div><div><div class="entry__title">Outstanding Presentation Award, 13th Science Frontier Research Presentation (FY2024)</div></div></div>
+<div class="entry" style="grid-template-columns:15mm 1fr;margin-bottom:1pt"><div class="entry__date">Nov 2023</div><div><div class="entry__title">Outstanding Presentation Award, 12th Science Frontier Research Presentation (FY2023)</div></div></div>
+<div class="entry" style="grid-template-columns:15mm 1fr;margin-bottom:1pt"><div class="entry__date">Aug 2023</div><div><div class="entry__title">1st Place Oral Award, ISM/Star &amp; Planet Formation Session, 53rd Summer School on Astronomy and Astrophysics</div></div></div>
+
+<h2>Skills</h2>
+<ul class="plain">
+    <li><strong>Simulation &amp; HPC:</strong> Large-scale parallel <i>N</i>-body simulation of planet formation; GPU-accelerated code development (chief developer of GPLUM-GPU); production runs on the supercomputer "Fugaku" and the GPU supercomputer Miyabi</li>
+    <li><strong>Programming:</strong> C/C++, CUDA, MPI/OpenMP, Python</li>
+    <li><strong>Languages:</strong> Japanese (native), English (fluent; TOEIC Listening &amp; Reading 980; high-school education in Canada)</li>
+    <li><strong>Certificates:</strong> 2024 International Summer School on HPC Challenges in Computational Sciences, Certificate of Participation; Class 4 Amateur Radio Operator License (Japan)</li>
+</ul>
+
+<h2>Professional Memberships &amp; Community Involvement</h2>
+<ul class="plain">
+    <li><strong>Member:</strong> Astronomical Society of Japan; The Japanese Society for Planetary Sciences; Japan Geoscience Union</li>
+    <li><strong>2024:</strong> Organizing Committee Member, Planetary Science Young Researchers Workshop 2024 (The Japanese Society for Planetary Sciences)</li>
+</ul>
+</div>
+</body>
+</html>
