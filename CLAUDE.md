@@ -237,6 +237,7 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 ### 6.5. Curriculum Vitae セクション
 - 英文 Academic CV（cv.pdf、A4・2ページ）を iframe で埋め込み表示。別タブで開く／ダウンロードのボタン付き
 - 原稿は cv.html。更新時は cv.html を編集し、ヘッドレス Chrome の --print-to-pdf で cv.pdf を再生成する
+- cv.pdf を更新したら、index.html 内の cv.pdf?v=N のバージョン番号を上げる（ブラウザキャッシュ対策）
 - About セクションにも「CV (PDF)」ボタンを置く
 
 ### 7. Career / 経歴セクション
