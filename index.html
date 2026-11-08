@@ -27,7 +27,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <script>
-        try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+        // Night mode is the default; only an explicit 'light' choice turns it off
+        var savedTheme = null;
+        try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+        if (savedTheme !== 'light') document.documentElement.setAttribute('data-theme', 'dark');
     </script>
     <link rel="stylesheet" href="style.css?v=8">
     <script type="application/ld+json">
