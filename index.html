@@ -33,7 +33,7 @@
         if (savedTheme !== 'light') document.documentElement.setAttribute('data-theme', 'dark');
         if (savedLang === 'ja') document.documentElement.setAttribute('lang', 'ja');
     </script>
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -139,7 +139,7 @@
                             <div class="about__links">
                                 <a href="https://orcid.org/0009-0001-5384-4202" target="_blank" rel="noopener noreferrer" class="about__link">ORCID</a>
                                 <a href="https://researchmap.jp/tenri_jinno" target="_blank" rel="noopener noreferrer" class="about__link">researchmap</a>
-                                <a href="cv.pdf?v=3" target="_blank" rel="noopener noreferrer" class="about__link">CV (PDF)</a>
+                                <a href="cv.pdf?v=4" target="_blank" rel="noopener noreferrer" class="about__link">CV (PDF)</a>
                             </div>
                         </div>
                     </div>
@@ -245,41 +245,8 @@
             <div class="container">
                 <h2 class="section__title">Publications</h2>
 
-                <div class="pub-summary" id="pub-summary">
-                    <table class="pub-summary__table">
-                        <thead>
-                            <tr>
-                                <th rowspan="2" scope="col"></th>
-                                <th rowspan="2" scope="col"><span class="lang-ja">合計</span><span class="lang-en">Total</span></th>
-                                <th rowspan="2" scope="col"><span class="lang-ja">筆頭著者</span><span class="lang-en">First author</span></th>
-                                <th colspan="4" scope="colgroup"><span class="lang-ja">共著</span><span class="lang-en">Co-authored</span></th>
-                            </tr>
-                            <tr>
-                                <th scope="col"><span class="lang-ja">計</span><span class="lang-en">Total</span></th>
-                                <th scope="col"><span class="lang-ja">第2著者</span><span class="lang-en">2nd</span></th>
-                                <th scope="col"><span class="lang-ja">第3著者</span><span class="lang-en">3rd</span></th>
-                                <th scope="col"><span class="lang-ja">その他</span><span class="lang-en">Other</span></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-group="ref">
-                                <th scope="row"><span class="lang-ja">査読付き</span><span class="lang-en">Refereed</span></th>
-                                <td data-k="total"></td><td data-k="first"></td><td data-k="co"></td><td data-k="second"></td><td data-k="third"></td><td data-k="other"></td>
-                            </tr>
-                            <tr data-group="non">
-                                <th scope="row"><span class="lang-ja">査読なし</span><span class="lang-en">Non-refereed</span></th>
-                                <td data-k="total"></td><td data-k="first"></td><td data-k="co"></td><td data-k="second"></td><td data-k="third"></td><td data-k="other"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class="pub-summary__note">
-                        <span class="lang-ja">査読付きは論文と Proceedings の合計です。うち投稿中 <span data-k="submitted"></span> 本を含みます。</span>
-                        <span class="lang-en">Refereed counts include journal papers and proceedings, of which <span data-k="submitted"></span> are submitted.</span>
-                    </p>
-                </div>
-
                 <h3 class="subsection__title"><span class="lang-ja">査読付き論文 / Refereed Papers</span><span class="lang-en">Refereed Papers</span></h3>
-                <h4 class="subsubsection__title"><span class="lang-ja">筆頭著者 / First Authored</span><span class="lang-en">First Authored</span></h4>
+                <h4 class="subsubsection__title"><span class="lang-ja">筆頭著者 / First Authored<span class="pub-count" data-fmt="ja"></span></span><span class="lang-en">First Authored<span class="pub-count" data-fmt="en"></span></span></h4>
                 <ol class="publications__list">
                     <li class="publication">
                         <p class="publication__authors"><span class="publication__number">[1]</span> <strong>Tenri Jinno</strong>, Yota Ishigaki, Takayuki R. Saitoh, Yoko Funato, Junichiro Makino</p>
@@ -316,8 +283,8 @@
                     </li>
                 </ol>
 
-                <h4 class="subsubsection__title"><span class="lang-ja">共著 / Co-authored</span><span class="lang-en">Co-authored</span></h4>
-                <ol class="publications__list" start="6">
+                <h4 class="subsubsection__title"><span class="lang-ja">共著 / Co-authored<span class="pub-count" data-fmt="ja"></span></span><span class="lang-en">Co-authored<span class="pub-count" data-fmt="en"></span></span></h4>
+                <ol class="publications__list" start="6" data-breakdown="true">
                     <li class="publication">
                         <p class="publication__authors"><span class="publication__number">[6]</span> David M. Hernandez, <strong>Tenri Jinno</strong>, Junichiro Makino</p>
                         <p class="publication__title">"Time-reversible timestepping in many-body planetary systems"</p>
@@ -327,7 +294,7 @@
                     </li>
                 </ol>
 
-                <h3 class="subsection__title"><span class="lang-ja">査読付きProceedings / Refereed Proceedings（全て筆頭著者）</span><span class="lang-en">Refereed Proceedings (First Authored)</span></h3>
+                <h3 class="subsection__title"><span class="lang-ja">査読付きProceedings / Refereed Proceedings（全て筆頭著者）<span class="pub-count" data-fmt="ja"></span></span><span class="lang-en">Refereed Proceedings (First Authored)<span class="pub-count" data-fmt="en"></span></span></h3>
                 <ol class="publications__list" start="7">
                     <li class="publication">
                         <p class="publication__authors"><span class="publication__number">[7]</span> <strong>Tenri Jinno</strong>, Takayuki R. Saitoh, Yota Ishigaki, Junichiro Makino</p>
@@ -337,7 +304,7 @@
                     </li>
                 </ol>
 
-                <h3 class="subsection__title"><span class="lang-ja">査読なし / Non-refereed</span><span class="lang-en">Non-refereed</span></h3>
+                <h3 class="subsection__title"><span class="lang-ja">査読なし / Non-refereed<span class="pub-count" data-fmt="ja"></span></span><span class="lang-en">Non-refereed<span class="pub-count" data-fmt="en"></span></span></h3>
                 <ol class="publications__list publications__list--nonrefereed" start="8">
                     <li class="publication">
                         <p class="publication__authors"><span class="publication__number">[8]</span> 関口瑞希, 石﨑梨理, 菖蒲迫健介, <strong>神野天里</strong>, 米谷珠萌, 吉田有宏, 于賢洋</p>
@@ -695,11 +662,11 @@
                     <span class="lang-en">Academic CV in English (A4, 2 pages). You can open it in a new tab or download it.</span>
                 </p>
                 <div class="cv__actions">
-                    <a href="cv.pdf?v=3" target="_blank" rel="noopener noreferrer" class="about__link"><span class="lang-ja">別タブで開く</span><span class="lang-en">Open in new tab</span></a>
-                    <a href="cv.pdf?v=3" class="about__link" download="Tenri_Jinno_CV.pdf"><span class="lang-ja">ダウンロード</span><span class="lang-en">Download</span></a>
+                    <a href="cv.pdf?v=4" target="_blank" rel="noopener noreferrer" class="about__link"><span class="lang-ja">別タブで開く</span><span class="lang-en">Open in new tab</span></a>
+                    <a href="cv.pdf?v=4" class="about__link" download="Tenri_Jinno_CV.pdf"><span class="lang-ja">ダウンロード</span><span class="lang-en">Download</span></a>
                 </div>
                 <div class="cv__viewer">
-                    <iframe src="cv.pdf?v=3#view=FitH" title="Curriculum Vitae (PDF)" loading="lazy"></iframe>
+                    <iframe src="cv.pdf?v=4#view=FitH" title="Curriculum Vitae (PDF)" loading="lazy"></iframe>
                     <p class="cv__fallback">
                         <span class="lang-ja">PDF が表示されない場合は、上のボタンから開いてください。</span>
                         <span class="lang-en">If the PDF does not display here, please use the buttons above.</span>
@@ -818,43 +785,37 @@
         // Sync the toggle with the language applied in <head> (English unless 'ja' was saved)
         setLanguage(htmlEl.getAttribute('lang') === 'ja' ? 'ja' : 'en', false);
 
-        // Publication counts by author position, computed from the lists below
-        (function summarizePublications() {
-            const blank = () => ({ total: 0, first: 0, co: 0, second: 0, third: 0, other: 0, submitted: 0 });
-            const stats = { ref: blank(), non: blank() };
-            document.querySelectorAll('#publications .publications__list').forEach(list => {
-                const group = list.classList.contains('publications__list--nonrefereed') ? 'non' : 'ref';
-                list.querySelectorAll('.publication').forEach(item => {
-                    const authors = item.querySelector('.publication__authors').cloneNode(true);
-                    const num = authors.querySelector('.publication__number');
-                    if (num) num.remove();
-                    const html = authors.innerHTML;
-                    const pos = html.indexOf('<strong>');
-                    if (pos < 0) return;
-                    const position = (html.slice(0, pos).match(/,/g) || []).length + 1;
-                    const st = stats[group];
-                    st.total++;
-                    if (position === 1) st.first++;
-                    else {
-                        st.co++;
-                        if (position === 2) st.second++;
-                        else if (position === 3) st.third++;
-                        else st.other++;
-                    }
-                    const journal = item.querySelector('.publication__journal');
-                    if (journal && /submitted/i.test(journal.textContent)) st.submitted++;
-                });
+        // Publication counts in each heading, computed from the list that follows it
+        document.querySelectorAll('#publications .publications__list').forEach(list => {
+            let heading = list.previousElementSibling;
+            while (heading && !/^H[34]$/.test(heading.tagName)) heading = heading.previousElementSibling;
+            if (!heading) return;
+            const c = { total: 0, second: 0, third: 0, other: 0 };
+            list.querySelectorAll('.publication__authors').forEach(authors => {
+                const copy = authors.cloneNode(true);
+                const num = copy.querySelector('.publication__number');
+                if (num) num.remove();
+                const pos = copy.innerHTML.indexOf('<strong>');
+                if (pos < 0) return;
+                const position = (copy.innerHTML.slice(0, pos).match(/,/g) || []).length + 1;
+                c.total++;
+                if (position === 2) c.second++;
+                else if (position === 3) c.third++;
+                else if (position > 3) c.other++;
             });
-            const box = document.getElementById('pub-summary');
-            Object.keys(stats).forEach(group => {
-                box.querySelectorAll('tr[data-group="' + group + '"] td').forEach(td => {
-                    td.textContent = stats[group][td.dataset.k];
-                });
+            const breakdown = list.dataset.breakdown === 'true';
+            heading.querySelectorAll('.pub-count').forEach(el => {
+                if (el.dataset.fmt === 'ja') {
+                    el.textContent = breakdown
+                        ? '（' + c.total + '本：第2著者 ' + c.second + '本、第3著者 ' + c.third + '本、その他 ' + c.other + '本）'
+                        : '（' + c.total + '本）';
+                } else {
+                    el.textContent = breakdown
+                        ? ' (' + c.total + '; 2nd author: ' + c.second + ', 3rd author: ' + c.third + ', other: ' + c.other + ')'
+                        : ' (' + c.total + ')';
+                }
             });
-            box.querySelectorAll('.pub-summary__note [data-k="submitted"]').forEach(el => {
-                el.textContent = stats.ref.submitted;
-            });
-        })();
+        });
 
         // Day / night mode switching
         const themeToggle = document.getElementById('theme-toggle');
