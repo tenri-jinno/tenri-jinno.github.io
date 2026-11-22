@@ -8,6 +8,7 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
 ## GitHub情報
 - **リポジトリ**: https://github.com/tenri-jinno
 - **公開URL**: https://tenri-jinno.github.io/ （予定）
+- **ページタイトル**: Tenri Jinno's Homepage（検索結果用。英語のみ）
 
 ---
 
@@ -174,7 +175,7 @@ GitHub Pages用の学術プロフィールページを作成するプロジェ�
   - サブテキスト: #595959（グレー）
   - 白と黒のモノクロトーン基調（2026年10月に青基調から変更）
   - ナイトモード（黒背景に白文字）: 背景 #121212、カード #1e1e1e、テキスト #f2f2f2、サブテキスト #a6a6a6、アクセント #f2f2f2
-  - ヘッダー右端に言語トグル（JP/EN）と昼夜トグル（太陽/月アイコン）を並べる。既定はナイトモード（2026年11月に変更）、選択は localStorage の theme に保存
+  - ヘッダー右端に言語トグル（JP/EN）と昼夜トグル（太陽/月アイコン）を並べる。既定は英語・ナイトモード（2026年11月に変更）、選択は localStorage の lang / theme に保存
 - **フォント**:
   - 見出し: "Merriweather", "Yu Mincho", serif
   - 本文: "Source Sans 3", "Hiragino Sans", sans-serif

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" prefix="og: https://ogp.me/ns#">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,30 @@
     <meta name="author" content="Tenri Jinno">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="MnjiyvuGpFnWOgoqvyOW-sLWGTYD5R8kd7rED-1ivJI">
-    <meta property="og:title" content="Tenri Jinno's Homepage | 神野天里 ホームページ">
+    <meta property="og:title" content="Tenri Jinno's Homepage">
     <meta property="og:description" content="神戸大学大学院理学研究科惑星学専攻計算惑星学教育研究分野 博士課程。スーパーコンピュータ「富岳」を用いた惑星形成シミュレーション研究。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tenri-jinno.github.io/">
     <meta property="og:image" content="https://tenri-jinno.github.io/profile.png">
-    <meta property="og:locale" content="ja_JP">
-    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ja_JP">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tenri Jinno's Homepage | 神野天里 ホームページ">
+    <meta name="twitter:title" content="Tenri Jinno's Homepage">
     <meta name="twitter:description" content="神戸大学大学院 惑星学専攻 博士課程。惑星形成シミュレーション研究。">
     <link rel="canonical" href="https://tenri-jinno.github.io/">
     <link rel="alternate" hreflang="ja" href="https://tenri-jinno.github.io/">
     <link rel="alternate" hreflang="en" href="https://tenri-jinno.github.io/">
     <link rel="alternate" hreflang="x-default" href="https://tenri-jinno.github.io/">
-    <title>Tenri Jinno's Homepage | 神野天里 ホームページ</title>
+    <title>Tenri Jinno's Homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <script>
-        // Night mode is the default; only an explicit 'light' choice turns it off
-        var savedTheme = null;
-        try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+        // Defaults: English + night mode. Only an explicit saved choice overrides them.
+        var savedTheme = null, savedLang = null;
+        try { savedTheme = localStorage.getItem('theme'); savedLang = localStorage.getItem('lang'); } catch (e) {}
         if (savedTheme !== 'light') document.documentElement.setAttribute('data-theme', 'dark');
+        if (savedLang === 'ja') document.documentElement.setAttribute('lang', 'ja');
     </script>
     <link rel="stylesheet" href="style.css?v=8">
     <script type="application/ld+json">
@@ -769,28 +770,20 @@
         const langToggle = document.getElementById('lang-toggle');
         const htmlEl = document.documentElement;
 
-        function setLanguage(lang) {
+        function setLanguage(lang, save) {
             htmlEl.setAttribute('lang', lang);
-            if (lang === 'en') {
-                langToggle.classList.add('toggle-switch--right');
-                document.title = "Tenri Jinno's Homepage | 神野天里 ホームページ";
-            } else {
-                langToggle.classList.remove('toggle-switch--right');
-                document.title = "Tenri Jinno's Homepage | 神野天里 ホームページ";
+            langToggle.classList.toggle('toggle-switch--right', lang === 'en');
+            if (save) {
+                try { localStorage.setItem('lang', lang); } catch (e) {}
             }
-            localStorage.setItem('lang', lang);
         }
 
         langToggle.addEventListener('click', function() {
-            const currentLang = htmlEl.getAttribute('lang') || 'ja';
-            setLanguage(currentLang === 'ja' ? 'en' : 'ja');
+            setLanguage(htmlEl.getAttribute('lang') === 'ja' ? 'en' : 'ja', true);
         });
 
-        // Restore saved language preference
-        const savedLang = localStorage.getItem('lang');
-        if (savedLang) {
-            setLanguage(savedLang);
-        }
+        // Sync the toggle with the language applied in <head> (English unless 'ja' was saved)
+        setLanguage(htmlEl.getAttribute('lang') === 'ja' ? 'ja' : 'en', false);
 
         // Day / night mode switching
         const themeToggle = document.getElementById('theme-toggle');
@@ -922,7 +915,7 @@
 
                 // Get the visible video title based on current language
                 const titleEl = this.closest('.research__simulation-item').querySelector('.research__video-title:not([style*="display: none"])');
-                const currentLang = htmlEl.getAttribute('lang') || 'ja';
+                const currentLang = htmlEl.getAttribute('lang') || 'en';
                 const titles = this.closest('.research__simulation-item').querySelectorAll('.research__video-title');
                 let videoTitle = '';
                 titles.forEach(t => {
