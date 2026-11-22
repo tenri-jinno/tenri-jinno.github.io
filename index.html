@@ -139,7 +139,7 @@
                             <div class="about__links">
                                 <a href="https://orcid.org/0009-0001-5384-4202" target="_blank" rel="noopener noreferrer" class="about__link">ORCID</a>
                                 <a href="https://researchmap.jp/tenri_jinno" target="_blank" rel="noopener noreferrer" class="about__link">researchmap</a>
-                                <a href="cv.pdf?v=4" target="_blank" rel="noopener noreferrer" class="about__link">CV (PDF)</a>
+                                <a href="cv.pdf?v=5" target="_blank" rel="noopener noreferrer" class="about__link">CV (PDF)</a>
                             </div>
                         </div>
                     </div>
@@ -662,11 +662,11 @@
                     <span class="lang-en">Academic CV in English (A4, 2 pages). You can open it in a new tab or download it.</span>
                 </p>
                 <div class="cv__actions">
-                    <a href="cv.pdf?v=4" target="_blank" rel="noopener noreferrer" class="about__link"><span class="lang-ja">別タブで開く</span><span class="lang-en">Open in new tab</span></a>
-                    <a href="cv.pdf?v=4" class="about__link" download="Tenri_Jinno_CV.pdf"><span class="lang-ja">ダウンロード</span><span class="lang-en">Download</span></a>
+                    <a href="cv.pdf?v=5" target="_blank" rel="noopener noreferrer" class="about__link"><span class="lang-ja">別タブで開く</span><span class="lang-en">Open in new tab</span></a>
+                    <a href="cv.pdf?v=5" class="about__link" download="Tenri_Jinno_CV.pdf"><span class="lang-ja">ダウンロード</span><span class="lang-en">Download</span></a>
                 </div>
                 <div class="cv__viewer">
-                    <iframe src="cv.pdf?v=4#view=FitH" title="Curriculum Vitae (PDF)" loading="lazy"></iframe>
+                    <iframe src="cv.pdf?v=5#view=FitH" title="Curriculum Vitae (PDF)" loading="lazy"></iframe>
                     <p class="cv__fallback">
                         <span class="lang-ja">PDF が表示されない場合は、上のボタンから開いてください。</span>
                         <span class="lang-en">If the PDF does not display here, please use the buttons above.</span>
@@ -807,11 +807,11 @@
             heading.querySelectorAll('.pub-count').forEach(el => {
                 if (el.dataset.fmt === 'ja') {
                     el.textContent = breakdown
-                        ? '（' + c.total + '本：第2著者 ' + c.second + '本、第3著者 ' + c.third + '本、その他 ' + c.other + '本）'
+                        ? '（第2著者 ' + c.second + '本、第3著者 ' + c.third + '本、その他 ' + c.other + '本）'
                         : '（' + c.total + '本）';
                 } else {
                     el.textContent = breakdown
-                        ? ' (' + c.total + '; 2nd author: ' + c.second + ', 3rd author: ' + c.third + ', other: ' + c.other + ')'
+                        ? ' (2nd author: ' + c.second + ', 3rd author: ' + c.third + ', other: ' + c.other + ')'
                         : ' (' + c.total + ')';
                 }
             });
