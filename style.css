@@ -661,6 +661,62 @@ ul, ol {
 /* ========================================
    Publications Section
    ======================================== */
+.pub-summary {
+    background-color: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: 16px 20px;
+    margin-bottom: 40px;
+    overflow-x: auto;
+}
+
+.section--alt .pub-summary {
+    background-color: var(--color-bg);
+}
+
+.pub-summary__table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 420px;
+    font-size: 0.9rem;
+}
+
+.pub-summary__table th,
+.pub-summary__table td {
+    padding: 6px 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+    white-space: nowrap;
+}
+
+.pub-summary__table thead th {
+    color: var(--color-text-light);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.pub-summary__table tbody th {
+    text-align: left;
+    font-weight: 600;
+}
+
+.pub-summary__table tbody tr:last-child th,
+.pub-summary__table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.pub-summary__table td[data-k="total"],
+.pub-summary__table td[data-k="first"],
+.pub-summary__table td[data-k="co"] {
+    font-weight: 700;
+}
+
+.pub-summary__note {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    margin-top: 8px;
+}
+
 .publications__list {
     counter-reset: publication-counter;
     list-style: none;
